@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 .banner-home {
-  background-image: url('../public/img/empty-gym.jpg');
+  background-image: url('../src/img/empty-gym.jpg');
+}
+.banner-about {
+  background-image: url('../src/img/personal-training-woman-ropes.jpg');
+}
+.banner-h-sm {
+  height: 50vh;
 }
 
 .hamburger {
