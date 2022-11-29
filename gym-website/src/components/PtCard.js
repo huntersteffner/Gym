@@ -10,7 +10,7 @@ const PtCard = (props) => {
         </p>
 
         <img
-          className="rounded-2xl m-7"
+          className="object-contain rounded-2xl m-7 w-50"
           src={props.image}
           alt="Personal Trainer Bench Press"
         />

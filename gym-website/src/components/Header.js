@@ -4,11 +4,18 @@ import Hamburger from './Hamburger'
 import Logo from './Logo'
 
 export default function Header() {
-    const [menuOpen, setMenuOpen] = useState('burger-bar unclicked')
+    const [menuOpen, setMenuOpen] = useState(false)
+
+    const hamburgerHandler = () => {
+      setMenuOpen(!menuOpen)
+    }
+
+    const hamburgerClasses = 'block hamburger md:hidden focus:outline-none'
 
   return (
     <header className="flex justify-around bg-black text-white">
-      <Logo/>
+      <h1>Logo</h1>
+      {/* Desktop Menu */}
       <nav className="hidden space-x-4 text-3xl md:flex">
         <div className="hover:cursor-pointer">Home</div>
         <div>About</div>
@@ -16,10 +23,18 @@ export default function Header() {
         <div>Group Classes</div>
         <div>Membership</div>
       </nav>
-      <div className='md:hidden'>
+      <button
+          id="menu-btn"
+          class={`block hamburger md:hidden focus:outline-none ${menuOpen ? 'open': ''} `}
+          type="button"
+          onClick={hamburgerHandler}
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+        {/* Mobile Menu */}
         
-
-      </div>
       
     </header>
   )
