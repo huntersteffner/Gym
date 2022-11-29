@@ -1,34 +1,35 @@
 import ptBench from '../img/personal-training-bench.jpg'
-import ptYoga from '../img/personal-training-yoga.jpg'
 import ptCardio from '../img/personal-training-treadmill.jpg'
 import ptForm from '../img/personal-training-form-check.jpg'
 import ptNutrition from '../img/personal-training-nutrition.jpg'
-import PtCard from '../components/PtCard'
-import PtForm from '../components/PtForm'
 
-const texts = {
-  cardio: {
-    title: 'Cardio',
-    body: `Whether you're training for a race, want to be able to keep up with your kids, or simply want to increase your endurance, our trainers will set up the perfect cardio plan for you.`,
-  },
-  nutrition: {
-    title: 'Customized Diets',
-    body: `A healthy lifestyle is more than getting enough exercise; you need a healthy diet as well. Our trainers can help you create a diet specifically tailored to you, and also provide the accountability to stick with it!`,
-  },
-  form: {
-    title: 'Physical Therapy',
-    body: `If you're recovering from an injury, we can assist you with rehabilitation to get back to normal faster.`,
-  },
-  bench: {
-    title: 'Strength Training',
-    body: `Increase your strength; improve your life.
-      Whether you want to competively powerlift or simply improve your
-      overall strength, our trainers can help you progressively improve
-      your abilities.`,
-  },
-}
+// Components
+import PtCard from '../components/PersonalTraining/PtCard'
+import PtForm from '../components/PersonalTraining/PtForm'
+import PtModal from '../components/PersonalTraining/PtModal'
 
 const PersonalTraining = (props) => {
+  const texts = {
+    cardio: {
+      title: 'Cardio',
+      body: `Whether you're training for a race, want to be able to keep up with your kids, or simply want to increase your endurance, our trainers will set up the perfect cardio plan for you.`,
+    },
+    nutrition: {
+      title: 'Customized Diets',
+      body: `A healthy lifestyle is more than getting enough exercise; you need a healthy diet as well. Our trainers can help you create a diet specifically tailored to you, and also provide the accountability to stick with it!`,
+    },
+    form: {
+      title: 'Physical Therapy',
+      body: `If you're recovering from an injury, we can assist you with rehabilitation to get back to normal faster.`,
+    },
+    bench: {
+      title: 'Strength Training',
+      body: `Increase your strength; improve your life.
+        Whether you want to competively powerlift or simply improve your
+        overall strength, our trainers can help you progressively improve
+        your abilities.`,
+    },
+  }
   return (
     <section className="bg-gray-900 text-white">
       <div className="banner-about banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
@@ -81,7 +82,8 @@ const PersonalTraining = (props) => {
       <div className="h-screen w-20">
         <h1>Hello</h1>
       </div>
-      <PtForm/>
+      <PtForm />
+      <PtModal/>
     </section>
   )
 }
