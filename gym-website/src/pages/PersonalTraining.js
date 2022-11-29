@@ -4,6 +4,7 @@ import ptCardio from '../img/personal-training-treadmill.jpg'
 import ptForm from '../img/personal-training-form-check.jpg'
 import ptNutrition from '../img/personal-training-nutrition.jpg'
 import PtCard from '../components/PtCard'
+import PtForm from '../components/PtForm'
 
 const texts = {
   cardio: {
@@ -80,41 +81,7 @@ const PersonalTraining = (props) => {
       <div className="h-screen w-20">
         <h1>Hello</h1>
       </div>
-      <div>
-        <h3>Sign Up Today for a Free Personal Training Session</h3>
-        <form>
-          <div>
-            <input type="email" id="email" placeholder="Email" />
-            <label id="email">Enter your Email</label>
-          </div>
-          <div>
-            <label>Cardio</label>
-            <input type="checkbox" />
-            <label>Nutrition</label>
-            <input type="checkbox" />
-            <label>Physical Therapy</label>
-            <input type="checkbox" />
-            <label>Strength Training</label>
-            <input type="checkbox" />
-          </div>
-          <div>
-            <label Date></label>
-            <input type="date" />
-            <div>
-              <label>6 AM - 9 AM</label>
-              <input type="checkbox" />
-              <label>9 AM - Noon</label>
-              <input type="checkbox" />
-              <label>Noon - 4 PM</label>
-              <input type="checkbox" />
-              <label>4 PM - 7 PM</label>
-              <input type="checkbox" />
-              <label>7 PM - 10 PM</label>
-              <input type="checkbox" />
-            </div>
-          </div>
-        </form>
-      </div>
+      <PtForm/>
     </section>
   )
 }
