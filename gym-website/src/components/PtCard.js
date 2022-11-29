@@ -1,23 +1,20 @@
-
-
 const PtCard = (props) => {
-    return <div className="flex">
-      <div className=" text-white items-center">
+  return (
+    <div className="flex flex-col justify-between">
+      <div className=" text-white">
         <h2 className="text-7xl text-center">{props.title}</h2>
 
-        <p>
-          {props.body}
-        </p>
-
+        <p className="text-xl p-5 text-justify">{props.body}</p>
+      </div>
+      <div className="p-6 ">
         <img
-          className="object-contain rounded-2xl m-7 w-50"
+          className="object-contain rounded-2xl w-full"
           src={props.image}
           alt="Personal Trainer Bench Press"
         />
-
-        {/* https://unsplash.com/photos/NXMZxygMw8o */}
       </div>
     </div>
+  )
 }
 
 export default PtCard

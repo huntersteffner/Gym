@@ -1,13 +1,22 @@
 import ptBench from '../img/personal-training-bench.jpg'
 import ptYoga from '../img/personal-training-yoga.jpg'
-import ptCardio from '../img/personal-training-cardio.jpg'
+import ptCardio from '../img/personal-training-treadmill.jpg'
 import ptForm from '../img/personal-training-form-check.jpg'
+import ptNutrition from '../img/personal-training-nutrition.jpg'
 import PtCard from '../components/PtCard'
 
 const texts = {
+  cardio: {
+    title: 'Cardio',
+    body: `Whether you're training for a race, want to be able to keep up with your kids, or simply want to increase your endurance, our trainers will set up the perfect cardio plan for you.`,
+  },
+  nutrition: {
+    title: 'Customized Diets',
+    body: `A healthy lifestyle is more than getting enough exercise; you need a healthy diet as well. Our trainers can help you create a diet specifically tailored to you, and also provide the accountability to stick with it!`,
+  },
   form: {
     title: 'Physical Therapy',
-    body: `If you're recovering from an injury, we can assist you with rehabilitation to get back to normal faster.`
+    body: `If you're recovering from an injury, we can assist you with rehabilitation to get back to normal faster.`,
   },
   bench: {
     title: 'Strength Training',
@@ -20,7 +29,7 @@ const texts = {
 
 const PersonalTraining = (props) => {
   return (
-    <section className="bg-gray-900">
+    <section className="bg-gray-900 text-white">
       <div className="banner-about banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
         <div className="flex justify-center items-center text-5xl py-5 px-10 bg-red-500 opacity-80 rounded-full">
           <h2>Personal Training</h2>
@@ -40,18 +49,18 @@ const PersonalTraining = (props) => {
       </div>
       {/* Types of training */}
       <div className="flex flex-wrap">
-        <div className="md:grid md:grid-cols-2 md:gap-3">
-          {/* https://unsplash.com/photos/y7ywDXWJ-JU */}
+        <div className="md:grid md:grid-cols-2 md:gap-1">
+          {/* https://unsplash.com/photos/8uzJGgJ1_3w */}
           <PtCard
             image={ptCardio}
-            title={texts.bench.title}
-            body={texts.bench.body}
+            title={texts.cardio.title}
+            body={texts.cardio.body}
           />
-          {/* https://unsplash.com/photos/kufLAiPoIlI */}
+          {/* https://unsplash.com/photos/bRdRUUtbxO0 */}
           <PtCard
-            image={ptYoga}
-            title={texts.bench.title}
-            body={texts.bench.body}
+            image={ptNutrition}
+            title={texts.nutrition.title}
+            body={texts.nutrition.body}
           />
           {/* https://unsplash.com/photos/PnUYkTFkOD0 */}
           <PtCard
@@ -65,13 +74,46 @@ const PersonalTraining = (props) => {
             title={texts.bench.title}
             body={texts.bench.body}
           />
-          {/* https://unsplash.com/photos/NXMZxygMw8o */}
-          <PtCard
-            image={ptBench}
-            title={texts.bench.title}
-            body={texts.bench.body}
-          />
         </div>
+      </div>
+      {/* Sign up form */}
+      <div className="h-screen w-20">
+        <h1>Hello</h1>
+      </div>
+      <div>
+        <h3>Sign Up Today for a Free Personal Training Session</h3>
+        <form>
+          <div>
+            <input type="email" id="email" placeholder="Email" />
+            <label id="email">Enter your Email</label>
+          </div>
+          <div>
+            <label>Cardio</label>
+            <input type="checkbox" />
+            <label>Nutrition</label>
+            <input type="checkbox" />
+            <label>Physical Therapy</label>
+            <input type="checkbox" />
+            <label>Strength Training</label>
+            <input type="checkbox" />
+          </div>
+          <div>
+            <label Date></label>
+            <input type="date" />
+            <div>
+              <label>6 AM - 9 AM</label>
+              <input type="checkbox" />
+              <label>9 AM - Noon</label>
+              <input type="checkbox" />
+              <label>Noon - 4 PM</label>
+              <input type="checkbox" />
+              <label>4 PM - 7 PM</label>
+              <input type="checkbox" />
+              <label>7 PM - 10 PM</label>
+              <input type="checkbox" />
+            </div>
+          </div>
+        </form>
       </div>
     </section>
   )
