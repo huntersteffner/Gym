@@ -1,9 +1,7 @@
-import ptBench from '../img/personal-training-bench.jpg'
-
 
 
 const PtCard = (props) => {
-    return <div className="flex md:w-70">
+    return <div className="flex">
       <div className=" text-white items-center">
         <h2 className="text-7xl text-center">{props.title}</h2>
 

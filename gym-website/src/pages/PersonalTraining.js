@@ -5,6 +5,10 @@ import ptForm from '../img/personal-training-form-check.jpg'
 import PtCard from '../components/PtCard'
 
 const texts = {
+  form: {
+    title: 'Physical Therapy',
+    body: `If you're recovering from an injury, we can assist you with rehabilitation to get back to normal faster.`
+  },
   bench: {
     title: 'Strength Training',
     body: `Increase your strength; improve your life.
@@ -35,77 +39,39 @@ const PersonalTraining = (props) => {
         </p>
       </div>
       {/* Types of training */}
-      <div className='flex flex-wrap'>
-        {/* Cardio */}
-        <div>
+      <div className="flex flex-wrap">
+        <div className="md:grid md:grid-cols-2 md:gap-3">
+          {/* https://unsplash.com/photos/y7ywDXWJ-JU */}
+          <PtCard
+            image={ptCardio}
+            title={texts.bench.title}
+            body={texts.bench.body}
+          />
+          {/* https://unsplash.com/photos/kufLAiPoIlI */}
+          <PtCard
+            image={ptYoga}
+            title={texts.bench.title}
+            body={texts.bench.body}
+          />
+          {/* https://unsplash.com/photos/PnUYkTFkOD0 */}
+          <PtCard
+            image={ptForm}
+            title={texts.form.title}
+            body={texts.form.body}
+          />
           {/* https://unsplash.com/photos/NXMZxygMw8o */}
-          <img src={ptCardio} alt="Personal Trainer Yoga" />
-        </div>
-        {/* https://unsplash.com/photos/y7ywDXWJ-JU */}
-        {/* Swimming */}
-        {/* Yoga */}
-        {/* https://unsplash.com/photos/kufLAiPoIlI */}
-        <div>
+          <PtCard
+            image={ptBench}
+            title={texts.bench.title}
+            body={texts.bench.body}
+          />
           {/* https://unsplash.com/photos/NXMZxygMw8o */}
-          <img src={ptYoga} alt="Personal Trainer Yoga" />
+          <PtCard
+            image={ptBench}
+            title={texts.bench.title}
+            body={texts.bench.body}
+          />
         </div>
-        {/* Weight loss */}
-        {/* https://unsplash.com/photos/PnUYkTFkOD0 */}
-        <div>
-          {/* https://unsplash.com/photos/NXMZxygMw8o */}
-          <img src={ptForm} alt="Personal Trainer Form Check" />
-        </div>
-
-        {/* Strenght Training */}
-        <div className="flex">
-          <div className="w-1/2">
-            {/* https://unsplash.com/photos/NXMZxygMw8o */}
-            <img src={ptBench} alt="Personal Trainer Bench Press" />
-          </div>
-          <div className="w-1/2 text-white items-center">
-            <h2 className="text-7xl text-center">Strength Training</h2>
-
-            <p>
-              Increase your strength; improve your life. <br />
-              Whether you want to competively powerlift or simply improve your
-              overall strength, our trainers can help you progressively improve
-              your abilities.
-            </p>
-
-            <img
-              className="rounded-2xl m-7"
-              src={ptBench}
-              alt="Personal Trainer Bench Press"
-            />
-
-            {/* https://unsplash.com/photos/NXMZxygMw8o */}
-          </div>
-        </div>
-        <PtCard
-          image={ptCardio}
-          title={texts.bench.title}
-          body={texts.bench.body}
-        />
-        <PtCard
-          image={ptYoga}
-          title={texts.bench.title}
-          body={texts.bench.body}
-        />
-        <PtCard
-          image={ptForm}
-          title={texts.bench.title}
-          body={texts.bench.body}
-        />
-        <PtCard
-          image={ptBench}
-          title={texts.bench.title}
-          body={texts.bench.body}
-        />
-        <PtCard
-          image={ptBench}
-          title={texts.bench.title}
-          body={texts.bench.body}
-        />
       </div>
     </section>
   )
