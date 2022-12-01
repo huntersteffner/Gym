@@ -1,3 +1,5 @@
+import Button from '../Button'
+
 const PtForm = () => {
     return <div className="m-2 ">
     <div>
@@ -51,11 +53,7 @@ const PtForm = () => {
             </div>
           </div>
         </div>
-        <input
-          className="bg-blue-300 rounded-full text-lg m-4 py-2 w-1/2 self-center cursor-pointer"
-          type="submit"
-          value="Submit"
-        />
+        <Button/>
       </form>
     </div>
   </div>
