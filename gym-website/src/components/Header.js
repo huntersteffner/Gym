@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
-import { slide as Menu } from 'react-burger-menu'
-import Hamburger from './Hamburger'
-import Logo from './Logo'
+import MobileMenu from './MobileMenu'
+
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -10,7 +9,6 @@ export default function Header() {
       setMenuOpen(!menuOpen)
     }
 
-    const hamburgerClasses = 'block hamburger md:hidden focus:outline-none'
 
   return (
     <header className="flex justify-around bg-black text-white">
@@ -25,7 +23,7 @@ export default function Header() {
       </nav>
       <button
           id="menu-btn"
-          class={`block hamburger md:hidden focus:outline-none ${menuOpen ? 'open': ''} `}
+          class={`block hamburger md:hidden focus:outline-none z-50 ${menuOpen ? 'open': ''} `}
           type="button"
           onClick={hamburgerHandler}
         >
@@ -34,7 +32,9 @@ export default function Header() {
           <span class="hamburger-bottom"></span>
         </button>
         {/* Mobile Menu */}
+        {menuOpen && <MobileMenu/>}
         
+
       
     </header>
   )

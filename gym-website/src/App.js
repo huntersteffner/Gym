@@ -5,6 +5,7 @@ import About from './pages/About'
 import PersonalTraining from './pages/PersonalTraining'
 import Footer from './components/Footer'
 
+
 export default function App() {
   return (
     <>
