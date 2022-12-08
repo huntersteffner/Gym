@@ -53,7 +53,6 @@ export default function Header() {
 function CustomLink({ to,children, ...props }) {
   const resolvedPath = useResolvedPath(to)
   const isActive = useMatch({ path: resolvedPath.pathname, end: true })
-  const path = window.location.pathname
   return (
     <div className={isActive ? 'active': ''} >
       <Link to={to} {...props}>{children}</Link>

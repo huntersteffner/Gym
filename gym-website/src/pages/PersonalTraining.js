@@ -31,14 +31,14 @@ const PersonalTraining = (props) => {
     },
   }
   return (
-    <section className="bg-gray-900 text-white">
+    <section className="bg-lightGrey">
       <div className="banner-about banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
         <div className="flex justify-center items-center text-5xl py-5 px-10 bg-red-500 opacity-80 rounded-full">
           <h2>Personal Training</h2>
         </div>
       </div>
 
-      <div className="text-white">
+      <div >
         <p className="text-xl m-4">
           Your fitness journey does not have to be something that do alone. Our
           team of personal trainers is ready to do everything to help you
@@ -51,7 +51,7 @@ const PersonalTraining = (props) => {
       </div>
       {/* Types of training */}
       <div className="flex flex-wrap">
-        <div className="md:grid md:grid-cols-2 md:gap-1">
+        <div className="space-y-3 md:grid md:grid-cols-2 md:gap-1 md:space-y-0">
           {/* https://unsplash.com/photos/8uzJGgJ1_3w */}
           <PtCard
             image={ptCardio}
