@@ -9,15 +9,20 @@ import {Route, Routes} from 'react-router-dom'
 
 
 export default function App() {
+
+  
   return (
     <>
       <Header />
-      {/* <Routes>
-        <Route path='/Gym' element={<Home/>} />
-      </Routes> */}
-      <Home />
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/personal-training' element={<PersonalTraining/>} />
+      </Routes>
+      
+      {/* <Home />
       <About/>
-      <PersonalTraining/>
+      <PersonalTraining/> */}
       <Footer/>
     </>
   )

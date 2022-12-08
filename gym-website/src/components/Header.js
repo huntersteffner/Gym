@@ -12,16 +12,20 @@ export default function Header() {
     }
 
 
+    
   return (
     <header className="flex justify-around bg-black text-white">
       <h1>Logo</h1>
       {/* Desktop Menu */}
       <nav className="hidden space-x-4 text-3xl md:flex">
-        <div className="hover:cursor-pointer">Home</div>
-        <div>About</div>
-        <div>Personal Training</div>
+        {/* <div ><a href="/">Home</a></div>
+        <div><a href="/about">About</a></div>
+        <div><a href="/personaltraining">Personal Training</a></div>
         <div>Group Classes</div>
-        <div>Membership</div>
+        <div>Membership</div> */}
+        <CustomLink to='/' >Home</CustomLink>
+        <CustomLink to='/about' >About</CustomLink>
+        <CustomLink to='/personal-training' >Personal Training</CustomLink>
       </nav>
       <button
           id="menu-btn"
@@ -43,14 +47,13 @@ export default function Header() {
 }
 
 // Function for Routes to work. Copied from documentation
-function CustomLink({ to, children, ...props }) {
+function CustomLink({ to,children, ...props }) {
   const resolvedPath = useResolvedPath(to)
   const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+  const path = window.location.pathname
   return (
-    <li className={isActive ? 'active' : ''}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
+    <div className={isActive ? 'active': ''} >
+      <Link to={to} {...props}>{children}</Link>
+    </div>
   )
 }
