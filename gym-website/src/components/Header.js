@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import MobileMenu from './MobileMenu'
 
+import {Link, useMatch, useResolvedPath} from 'react-router-dom'
+
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -37,5 +39,18 @@ export default function Header() {
 
       
     </header>
+  )
+}
+
+// Function for Routes to work. Copied from documentation
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+  return (
+    <li className={isActive ? 'active' : ''}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
   )
 }
