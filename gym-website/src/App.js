@@ -6,6 +6,9 @@ import PersonalTraining from './pages/PersonalTraining'
 import Footer from './components/Footer'
 
 import {Route, Routes} from 'react-router-dom'
+import GroupClasses from './pages/GroupClasses'
+import Membership from './pages/Membership'
+import Careers from './pages/Careers'
 
 
 export default function App() {
@@ -18,6 +21,9 @@ export default function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/personal-training' element={<PersonalTraining/>} />
+        <Route path='/group-classes' element={<GroupClasses/>} />
+        <Route path='/membership' element={<Membership/>} />
+        <Route path='/careers' element={<Careers/>} />
       </Routes>
       
       {/* <Home />

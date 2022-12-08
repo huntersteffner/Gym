@@ -26,6 +26,9 @@ export default function Header() {
         <CustomLink to='/' >Home</CustomLink>
         <CustomLink to='/about' >About</CustomLink>
         <CustomLink to='/personal-training' >Personal Training</CustomLink>
+        <CustomLink to='/group-classes' >Group Classes</CustomLink>
+        <CustomLink to='/membership' >Membership</CustomLink>
+        <CustomLink to='/careers' >Careers</CustomLink>
       </nav>
       <button
           id="menu-btn"
