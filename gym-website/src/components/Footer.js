@@ -3,7 +3,7 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="bg-black flex flex-col justify-between items-start px-10 text-white md:flex-row md:items-center">
+    <footer className="bg-black flex flex-col justify-between items-start px-10 text-white md:flex-row md:items-center text-lg md:text-xl">
       <div className="footer-section">
         <h2>Logo</h2>
         &copy; 2022 Gym Website

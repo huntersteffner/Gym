@@ -66,5 +66,5 @@
 }
 
 .footer-section {
-  @apply border-b py-3 mt-3 w-1/2 md:border-b-0;
+  @apply border-b py-3 mt-3 w-1/2 space-y-2 md:border-b-0;
 }

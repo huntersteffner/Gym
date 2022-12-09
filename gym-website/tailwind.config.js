@@ -7,7 +7,11 @@ module.exports = {
     extend: {
       colors: {
         lightGrey: '#efefef',
-      }
+      },
+      fontFamily: {
+        sans: ['Rubik', 'sans-serif'],
+        opensans: ['Open Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [],
