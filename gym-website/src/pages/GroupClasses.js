@@ -1,7 +1,12 @@
+import Calendar from '../components/About/Calendar'
+
 const GroupClasses = () => {
-    return (
-        <h1>GroupClasses</h1>
-    )
+  return (
+    <div>
+      <h1>GroupClasses</h1>
+      <Calendar />
+    </div>
+  )
 }
 
 export default GroupClasses
