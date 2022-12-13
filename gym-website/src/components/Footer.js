@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-black flex flex-col justify-between items-start px-10 text-white md:flex-row md:items-center text-lg md:text-xl">
       <div className="footer-section">
         <h2>Logo</h2>
-        &copy; 2022 Gym Website
+        &copy; 2023 Gym Website
       </div>
       <div className="footer-section">
         <p>Email: contact@examplegym.com</p>
