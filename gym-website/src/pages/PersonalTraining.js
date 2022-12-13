@@ -32,7 +32,7 @@ const PersonalTraining = (props) => {
   }
   return (
     <section className="bg-lightGrey">
-      <div className="banner-about banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
+      <div className="banner-pt banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
         <div className="flex justify-center items-center text-5xl py-5 px-10 bg-red-500 opacity-80 rounded-full">
           <h2>Personal Training</h2>
         </div>

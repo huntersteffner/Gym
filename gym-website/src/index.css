@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rubik:wght@400;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,6 +8,9 @@
   background-image: url('../src/img/empty-gym.jpg');
 }
 .banner-about {
+  background-image: url('../src/img/about-plates.jpg');
+}
+.banner-pt {
   background-image: url('../src/img/personal-training-woman-ropes.jpg');
 }
 .banner-h-sm {
