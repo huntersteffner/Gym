@@ -25,6 +25,11 @@
   width: 47%;
 }
 
+/* Group classes */
+.mobile-calendar {
+  
+}
+
 .hamburger {
   cursor: pointer;
   width: 24px;
