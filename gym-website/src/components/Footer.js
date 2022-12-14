@@ -1,12 +1,23 @@
 import FooterSocial from './FooterSocial'
+import { IoBarbell } from 'react-icons/io5'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <footer className="bg-black flex flex-col justify-between items-start px-10 text-white md:flex-row md:items-center text-lg md:text-xl">
-      <div className="footer-section">
-        <h2>Logo</h2>
-        &copy; 2023 Gym Website
+      <div className="footer-section flex flex-col">
+        <Link
+          to="/"
+          className="flex flex-col self-start justify-center items-center"
+        >
+          <div>
+            <IoBarbell className="text-6xl" />
+          </div>
+          <div>
+            <p className="text-3xl">Local Gym</p>
+          </div>
+        </Link>
+        <p>&copy; 2023 All Rights Reserved</p>
       </div>
       <div className="footer-section">
         <p>Email: contact@examplegym.com</p>

@@ -1,11 +1,40 @@
 import { useState } from 'react'
 
+import GroupClassesData from '../../data/GroupClassesData'
+import MobileCalendarLI from './MobileCalendarLI'
+
 const MobileCalendar = () => {
   const [dayOfWeek, setDayOfWeek] = useState('Monday')
+  const [mobileList, setMobileList] = useState(
+    <MobileCalendarLI text={'Testing'} time="Time man" />
+  )
+
+  let dayObject
+
+  let laLista
 
   const weekHandler = (e) => {
     setDayOfWeek(e.target.value)
+    const curDay = GroupClassesData.filter((day) => day.day === e.target.value)
+    dayObject = curDay[0].classes
+    // const classesList = () => {
+    //   return dayObject.map((day) => (
+    //     <MobileCalendarLI key={day.id} text={day.text} time={day.time} />
+    //   ))
+    // }
+    setMobileList(
+      dayObject.map((day) => (
+        <MobileCalendarLI key={day.id} text={day.text} time={day.time} />
+      ))
+    )
+    return laLista
   }
+  // const mobileCalendarHandler = () => {
+  //   return dayObject.map((day) => (
+  //     <MobileCalendarLI key={day.id} text={day.text} time={day.time} />
+  //   ))
+  // }
+
   return (
     <div className="container mx-auto mt-10">
       <div className="wrapper bg-white rounded shadow w-full">
@@ -30,28 +59,7 @@ const MobileCalendar = () => {
           </div>
         </div>
         {/* List of classes */}
-        <ul className="mobile-calendar">
-          <li className="flex justify-between items-center border py-3 px-4 cursor-pointer odd:bg-gray-100">
-            <h1>Class A</h1>
-            <h1>8-9 AM</h1>
-          </li>
-          <li className="flex justify-between items-center border py-3 px-4 cursor-pointer odd:bg-gray-100">
-            <h1>Class B</h1>
-            <h1>8-9 AM</h1>
-          </li>
-          <li className="flex justify-between items-center border py-3 px-4 cursor-pointer odd:bg-gray-100">
-            <h1>Class C</h1>
-            <h1>8-9 AM</h1>
-          </li>
-          <li className="flex justify-between items-center border py-3 px-4 cursor-pointer odd:bg-gray-100">
-            <h1>Class D</h1>
-            <h1>8-9 AM</h1>
-          </li>
-          <li className="flex justify-between items-center border py-3 px-4 cursor-pointer odd:bg-gray-100">
-            <h1>Class E</h1>
-            <h1>8-9 AM</h1>
-          </li>
-        </ul>
+        <ul className="mobile-calendar">{mobileList}</ul>
       </div>
     </div>
   )

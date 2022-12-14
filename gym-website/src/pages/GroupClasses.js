@@ -1,5 +1,5 @@
-import Calendar from '../components/About/Calendar'
-import MobileCalendar from '../components/About/MobileCalendar'
+import Calendar from '../components/GroupClasses/Calendar'
+import MobileCalendar from '../components/GroupClasses/MobileCalendar'
 
 const GroupClasses = () => {
   return (
