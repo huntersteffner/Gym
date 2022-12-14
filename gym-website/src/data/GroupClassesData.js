@@ -4,18 +4,28 @@ const GroupClassesData = [
         classes: [
             {
                 id: 1,
-                text: 'Cycling',
+                text: 'Monday Morning HIIT',
                 time: '6:00 AM - 7:00 AM'
             },
             {
                 id: 2,
                 text: 'Cycling',
-                time: '6:00 AM - 7:00 AM'
+                time: '7:00 AM - 8:00 AM'
             },
             {
                 id: 3,
-                text: 'Cycling',
-                time: '6:00 AM - 7:00 AM'
+                text: 'Swimming',
+                time: '11:30 AM - 12:30 PM'
+            },
+            {
+                id: 4,
+                text: 'Hot Yoga',
+                time: '4:30 PM - 5:30 PM'
+            },
+            {
+                id: 5,
+                text: 'Zumba',
+                time: '6:00 PM - 7:00 PM'
             },
         ]
     },
@@ -24,18 +34,33 @@ const GroupClassesData = [
         classes: [
             {
                 id: 1,
-                text: 'Yoga',
+                text: 'Advanced Cycling',
                 time: '6:00 AM - 7:00 AM'
             },
             {
                 id: 2,
                 text: 'Yoga',
-                time: '6:00 AM - 7:00 AM'
+                time: '7:00 AM - 8:00 AM'
             },
             {
                 id: 3,
-                text: 'Yoga',
-                time: '6:00 AM - 7:00 AM'
+                text: 'Zumba',
+                time: '11:30 AM - 12:30 PM'
+            },
+            {
+                id: 4,
+                text: 'Power 5K Run',
+                time: '4:30 PM - 5:30 PM'
+            },
+            {
+                id: 5,
+                text: 'Spartan Race Training',
+                time: '5:30 PM - 6:30 PM'
+            },
+            {
+                id: 6,
+                text: 'Kettlebell Training',
+                time: '6:00 PM - 7:00 PM'
             },
         ]
     },
@@ -44,18 +69,33 @@ const GroupClassesData = [
         classes: [
             {
                 id: 1,
-                text: 'Zumba',
+                text: 'Killer Leg Day',
                 time: '6:00 AM - 7:00 AM'
             },
             {
                 id: 2,
-                text: 'Zumba',
-                time: '6:00 AM - 7:00 AM'
+                text: 'Advanced Cycling',
+                time: '7:30 AM - 8:30 AM'
             },
             {
                 id: 3,
+                text: 'Hot Yoga',
+                time: '10:30 AM - 11:30 PM'
+            },
+            {
+                id: 4,
+                text: 'HIIT',
+                time: '1:30 PM - 2:30 PM'
+            },
+            {
+                id: 5,
                 text: 'Zumba',
-                time: '6:00 AM - 7:00 AM'
+                time: '4:30 PM - 5:30 PM'
+            },
+            {
+                id: 6,
+                text: 'Weight Training',
+                time: '6:00 PM - 7:00 PM'
             },
         ]
     },
@@ -64,18 +104,23 @@ const GroupClassesData = [
         classes: [
             {
                 id: 1,
-                text: 'Running',
-                time: '6:00 AM - 7:00 AM'
+                text: 'Long Distance Cycling',
+                time: '6:30 AM - 7:30 AM'
             },
             {
                 id: 2,
-                text: 'Running',
-                time: '6:00 AM - 7:00 AM'
+                text: 'Yoga',
+                time: '12:30 AM - 1:30 PM'
             },
             {
                 id: 3,
-                text: 'Running',
-                time: '6:00 AM - 7:00 AM'
+                text: 'Kettlebell Training',
+                time: '4:30 PM - 5:30 PM'
+            },
+            {
+                id: 4,
+                text: 'Afternoon Swim',
+                time: '6:00 PM - 7:00 PM'
             },
         ]
     },
@@ -84,19 +129,60 @@ const GroupClassesData = [
         classes: [
             {
                 id: 1,
-                text: 'Sleeping',
+                text: 'Bootcamp',
                 time: '6:00 AM - 7:00 AM'
             },
             {
                 id: 2,
-                text: 'Sleeping',
-                time: '6:00 AM - 7:00 AM'
+                text: 'HIIT',
+                time: '11:00 AM - 12:00 PM'
             },
             {
                 id: 3,
-                text: 'Sleeping',
-                time: '6:00 AM - 7:00 AM'
+                text: 'Advanced Cycling',
+                time: '2:00 PM - 3:00 PM'
             },
+            {
+                id: 4,
+                text: 'Kettlebell Training',
+                time: '3:30 PM - 4:30 PM'
+            },
+            {
+                id: 5,
+                text: 'Yoga',
+                time: '5:30 PM - 6:30 PM'
+            },
+        ]
+    },
+    {
+        day: 'Saturday',
+        classes: [
+            {
+                id: 1,
+                text: 'Bootcamp',
+                time: '10:00 AM - 11:00 AM'
+            },
+            {
+                id: 2,
+                text: 'Zumba',
+                time: '1:00 PM - 2:00 PM'
+            },
+            {
+                id: 3,
+                text: 'Cycling',
+                time: '4:00 AM - 5:00 AM'
+            },
+        ]
+    },
+    {
+        day: 'Sunday',
+        classes: [
+            {
+                id: 1,
+                text: 'Sunday Afternoon Yoga',
+                time: '3:00 PM - 4:00 PM'
+            },
+            
         ]
     },
 
