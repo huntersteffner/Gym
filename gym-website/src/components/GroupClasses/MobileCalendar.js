@@ -6,7 +6,9 @@ import MobileCalendarLI from './MobileCalendarLI'
 const MobileCalendar = () => {
   const [dayOfWeek, setDayOfWeek] = useState('Monday')
   const [mobileList, setMobileList] = useState(
-    <MobileCalendarLI text={'Testing'} time="Time man" />
+    GroupClassesData[0].classes.map((day) => (
+      <MobileCalendarLI key={day.id} text={day.text} time={day.time} />
+    ))
   )
 
   let dayObject
