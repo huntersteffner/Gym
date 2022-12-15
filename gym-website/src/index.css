@@ -26,8 +26,29 @@
 }
 
 /* Group classes */
-.mobile-calendar {
-  
+/* .calendar-row {
+  @apply text-center h-40;
+}
+.calendar-column-regular {
+  @apply border p-1 h-80;
+}
+.calendar-column-other {
+  @apply border bg-gray-100 p-1 h-80;
+}
+.calendar-column-inner {
+  @apply flex flex-col h-80;
+} */
+.calendar-column {
+  @apply flex flex-col text-center border w-full h-full justify-center;
+}
+.calendar-head {
+  @apply border-b w-full h-10;
+}
+.calendar-item {
+  @apply flex flex-col items-start p-2 space-y-2 list-none;
+}
+.calendar-list {
+  @apply flex flex-col;
 }
 
 .hamburger {
