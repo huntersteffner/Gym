@@ -3,25 +3,25 @@ import CalendarItem from './CalendarItem'
 
 const Calendar = () => {
   const mondayClasses = GroupClassesData[0].classes.map((item) => (
-    <CalendarItem key={item.id} time={item.time} text={item.text} />
+    <CalendarItem key={item.id} time={item.time} text={item.text} background={item.background} />
   ))
   const tuesdayClasses = GroupClassesData[1].classes.map((item) => (
-    <CalendarItem key={item.id} time={item.time} text={item.text} />
+    <CalendarItem key={item.id} time={item.time} text={item.text} background={item.background} />
   ))
   const wednesdayClasses = GroupClassesData[2].classes.map((item) => (
-    <CalendarItem key={item.id} time={item.time} text={item.text} />
+    <CalendarItem key={item.id} time={item.time} text={item.text} background={item.background} />
   ))
   const thursdayClasses = GroupClassesData[3].classes.map((item) => (
-    <CalendarItem key={item.id} time={item.time} text={item.text} />
+    <CalendarItem key={item.id} time={item.time} text={item.text} background={item.background} />
   ))
   const fridayClasses = GroupClassesData[4].classes.map((item) => (
-    <CalendarItem key={item.id} time={item.time} text={item.text} />
+    <CalendarItem key={item.id} time={item.time} text={item.text} background={item.background} />
   ))
   const saturdayClasses = GroupClassesData[5].classes.map((item) => (
-    <CalendarItem key={item.id} time={item.time} text={item.text} />
+    <CalendarItem key={item.id} time={item.time} text={item.text} background={item.background} />
   ))
   const sundayClasses = GroupClassesData[6].classes.map((item) => (
-    <CalendarItem key={item.id} time={item.time} text={item.text} />
+    <CalendarItem key={item.id} time={item.time} text={item.text} background={item.background} />
   ))
 
   // Based off of calendar here https://codepen.io/alvarotrigo/pen/XWZdgQw
@@ -637,7 +637,7 @@ const Calendar = () => {
   //   </div>
   // )
   return (
-    <div className="container mx-auto mt-10 border">
+    <div className="container mx-auto mt-10">
       {/* Head */}
       <div className="flex justify-between items-start">
         <div className="calendar-column">

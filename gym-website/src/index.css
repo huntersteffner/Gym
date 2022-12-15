@@ -39,7 +39,7 @@
   @apply flex flex-col h-80;
 } */
 .calendar-column {
-  @apply flex flex-col text-center border w-full h-full justify-center;
+  @apply flex flex-col text-center border w-full h-full;
 }
 .calendar-head {
   @apply border-b w-full h-10;

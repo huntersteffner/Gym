@@ -1,4 +1,4 @@
-const CalendarItem = ({ text, time }) => {
+const CalendarItem = ({ text, time, background }) => {
   // return (
   //   <div class="event bg-blue-400 text-white rounded p-1 text-sm mb-1">
   //     <span class="event-name">{text}</span>
@@ -6,7 +6,7 @@ const CalendarItem = ({ text, time }) => {
   //   </div>
   // )
   return (
-    <li className="bg-blue-400 text-white rounded p-1 text-sm mb-1">
+    <li className={`${background} text-white rounded p-1 text-sm mb-1 list-none`}>
       <p>{text}</p>
       <p>{time}</p>
     </li>
