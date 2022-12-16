@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import MobileMenu from './MobileMenu'
-import { IoBarbell } from 'react-icons/io5'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
+import { useMediaQuery } from 'react-responsive'
+
+import Logo from './Logo'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -10,44 +12,43 @@ export default function Header() {
     setMenuOpen(!menuOpen)
   }
 
+  const isComputer = useMediaQuery({
+    query: '(min-width: 768px)',
+  })
+  const isMobile = useMediaQuery({
+    query: '(max-width: 767px)',
+  })
+
   return (
     <header className="flex justify-around bg-black text-white">
-      <Link to="/" className="flex flex-col justify-center items-center">
-        <div>
-          <IoBarbell className="text-6xl" />
-        </div>
-        <div>
-          <p className="text-3xl">Local Gym</p>
-        </div>
-      </Link>
+      <Logo />
       {/* Desktop Menu */}
-      <nav className="hidden space-x-4 text-3xl md:flex">
-        {/* <div ><a href="/">Home</a></div>
-        <div><a href="/about">About</a></div>
-        <div><a href="/personaltraining">Personal Training</a></div>
-        <div>Group Classes</div>
-        <div>Membership</div> */}
-        <CustomLink to="/">Home</CustomLink>
-        <CustomLink to="/about">About</CustomLink>
-        <CustomLink to="/personal-training">Personal Training</CustomLink>
-        <CustomLink to="/group-classes">Group Classes</CustomLink>
-        <CustomLink to="/membership">Membership</CustomLink>
-        <CustomLink to="/careers">Careers</CustomLink>
-      </nav>
-      <button
-        id="menu-btn"
-        class={`block hamburger md:hidden focus:outline-none z-50 ${
-          menuOpen ? 'open' : ''
-        } `}
-        type="button"
-        onClick={hamburgerHandler}
-      >
-        <span class="hamburger-top"></span>
-        <span class="hamburger-middle"></span>
-        <span class="hamburger-bottom"></span>
-      </button>
+      {isComputer && (
+        <nav className="hidden space-x-4 text-3xl md:flex">
+          <CustomLink to="/">Home</CustomLink>
+          <CustomLink to="/about">About</CustomLink>
+          <CustomLink to="/personal-training">Personal Training</CustomLink>
+          <CustomLink to="/group-classes">Group Classes</CustomLink>
+          <CustomLink to="/membership">Membership</CustomLink>
+          <CustomLink to="/careers">Careers</CustomLink>
+        </nav>
+      )}
+      {isMobile && (
+        <button
+          id="menu-btn"
+          class={`block hamburger focus:outline-none z-50 ${
+            menuOpen ? 'open' : ''
+          } `}
+          type="button"
+          onClick={hamburgerHandler}
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      )}
       {/* Mobile Menu */}
-      {menuOpen && <MobileMenu />}
+      {isMobile && <MobileMenu open={menuOpen} />}
     </header>
   )
 }

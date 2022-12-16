@@ -7,6 +7,7 @@ import ptNutrition from '../img/personal-training-nutrition.jpg'
 import PtCard from '../components/PersonalTraining/PtCard'
 import PtForm from '../components/PersonalTraining/PtForm'
 import PtModal from '../components/PersonalTraining/PtModal'
+import BannerText from '../components/BannerText'
 
 const PersonalTraining = (props) => {
   const texts = {
@@ -33,9 +34,7 @@ const PersonalTraining = (props) => {
   return (
     <section className="bg-lightGrey">
       <div className="banner-pt banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
-        <div className="flex justify-center items-center text-5xl py-5 px-10 bg-red-500 opacity-80 rounded-full">
-          <h2>Personal Training</h2>
-        </div>
+        <BannerText title='Personal Training'/>
       </div>
 
       <div >

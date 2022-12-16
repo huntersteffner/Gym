@@ -4,12 +4,15 @@ import aboutPool from '../img/about-pool.jpg'
 import aboutDumbbells from '../img/about-dumbbells.jpg'
 import ptImage from '../img/personal-training-woman-ropes.jpg'
 import classesImage from '../img/personal-training-yoga.jpg'
+import BannerText from '../components/BannerText'
 
 const About = () => {
   // https://unsplash.com/photos/JbI04nYfaJk
   return (
     <>
-      <div className="banner-about banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center"></div>
+      <div className="banner-about banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
+        <BannerText title='About our Gym'/>
+      </div>
       <main>
         <section className="flex flex-col justify-center items-center px-8">
             <h1>About our Gym</h1>

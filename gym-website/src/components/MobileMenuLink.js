@@ -1,6 +1,8 @@
-const MobileMenuLink = (props) => {
+import { Link, useMatch, useResolvedPath } from 'react-router-dom'
+
+const MobileMenuLink = ({title, url}) => {
     return (
-        <div className="border-b border-red-300 mb-3 pb-3">{props.title}</div>
+        <Link to={url} className="border-b border-red-300 mb-3 pb-3">{title}</Link>
     )
 }
 
