@@ -19,6 +19,8 @@ export default function Header() {
     query: '(max-width: 767px)',
   })
 
+  
+
   return (
     <header className="flex justify-around bg-black text-white">
       <Logo />
@@ -48,7 +50,7 @@ export default function Header() {
         </button>
       )}
       {/* Mobile Menu */}
-      {isMobile && <MobileMenu open={menuOpen} />}
+      {isMobile && <MobileMenu linkSelect={hamburgerHandler} open={menuOpen} />}
     </header>
   )
 }
