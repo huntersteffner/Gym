@@ -3,7 +3,7 @@ import MobileMenu from './MobileMenu'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 
-import Logo from './Logo'
+import Logo from '../Logo'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)

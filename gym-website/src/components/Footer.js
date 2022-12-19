@@ -3,11 +3,12 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 import Logo from './Logo'
 
 const Footer = () => {
+  const footerYear = new Date().getFullYear()
   return (
     <footer className="bg-black flex flex-col justify-between items-start px-10 text-white md:flex-row md:items-center text-lg md:text-xl">
       <div className="footer-section flex flex-col">
         <Logo />
-        <p>&copy; 2023 All Rights Reserved</p>
+        <p>&copy; {footerYear} All Rights Reserved</p>
       </div>
       <div className="footer-section">
         <p>Email: contact@examplegym.com</p>

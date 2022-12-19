@@ -11,60 +11,69 @@ const About = () => {
   return (
     <>
       <div className="banner-about banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
-        <BannerText title='About our Gym'/>
+        <BannerText title="About our Gym" />
       </div>
       <main>
         <section className="flex flex-col justify-center items-center px-8">
-            <h1>About our Gym</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur rem, placeat voluptatibus amet id nihil iure reprehenderit accusantium eaque, sequi animi. Nesciunt excepturi laudantium consequatur, corporis similique tenetur quidem quae.</p>
+          <h1>About our Gym</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur rem, placeat voluptatibus amet id nihil iure
+            reprehenderit accusantium eaque, sequi animi. Nesciunt excepturi
+            laudantium consequatur, corporis similique tenetur quidem quae.
+          </p>
         </section>
         <section>
-            <h2>We have everything you could ever need</h2>
-            <div>
-                {/* Machine */}
-                <h3>Machines</h3>
-                <p>Our equipment have the newest equipment and cleanest.</p>
-                {/* https://unsplash.com/photos/-b4GeymbJl8 */}
-                <img src={aboutLegPress} alt="" />
+          <h2>We have everything you could ever need</h2>
+          <div className="text-white m-7 h-[600px]">
+            {/* Machine */}
+            {/* https://unsplash.com/photos/-b4GeymbJl8 */}
+            <div className='h-2/3 overflow-hidden object-bottom'>
+              <img className='w-full ' src={aboutPool} alt="" />
             </div>
-            <div>
-                {/* FUnctional */}
-                <h3>Functional Workouts</h3>
-                <p>Our equipment have the newest equipment and cleanest.</p>
-                {/* https://unsplash.com/photos/rA5aJvQ2l6g */}
-                <img src={aboutPush} alt="" />
+            <div className="bg-black test h-1/3">
+              <h3>Machines</h3>
+              <p>Our equipment have the newest equipment and cleanest.</p>
             </div>
-            <div>
-                {/* Freeweights */}
-                <h3>Freeweights</h3>
-                <p>Our equipment have the newest equipment and cleanest.</p>
-                {/* https://unsplash.com/photos/CQfNt66ttZM */}
-                <img src={aboutDumbbells} alt="" />
-            </div>
-            <div>
-                {/* Pool */}
-                <h3>Pool</h3>
-                <p>Our equipment have the newest equipment and cleanest.</p>
-                {/* https://unsplash.com/photos/sdnyvKH4PsA */}
-                <img src={aboutPool} alt="" />
-            </div>
+          </div>
+          <div>
+            {/* FUnctional */}
+            <h3>Functional Workouts</h3>
+            <p>Our equipment have the newest equipment and cleanest.</p>
+            <img src={aboutPush} alt="" />
+            {/* https://unsplash.com/photos/rA5aJvQ2l6g */}
+          </div>
+          <div>
+            {/* Freeweights */}
+            <h3>Freeweights</h3>
+            <p>Our equipment have the newest equipment and cleanest.</p>
+            {/* https://unsplash.com/photos/CQfNt66ttZM */}
+            <img src={aboutDumbbells} alt="" />
+          </div>
+          <div>
+            {/* Pool */}
+            <h3>Pool</h3>
+            <p>Our equipment have the newest equipment and cleanest.</p>
+            {/* https://unsplash.com/photos/sdnyvKH4PsA */}
+            <img src={aboutPool} alt="" />
+          </div>
         </section>
         <section>
-            <h2>Training</h2>
-            <div>
-                <h3>Personal Training</h3>
-                <img src={ptImage} alt="" />
-                <button>
-                    <a href="/personal-training">Click Here</a>
-                </button>
-            </div>
-            <div>
-                <h3>Group Classes</h3>
-                <img src={classesImage} alt="" />
-                <button>
-                <a href="/group-classes">Click Here</a>
-                </button>
-            </div>
+          <h2>Training</h2>
+          <div>
+            <h3>Personal Training</h3>
+            <img src={ptImage} alt="" />
+            <button>
+              <a href="/personal-training">Click Here</a>
+            </button>
+          </div>
+          <div>
+            <h3>Group Classes</h3>
+            <img src={classesImage} alt="" />
+            <button>
+              <a href="/group-classes">Click Here</a>
+            </button>
+          </div>
         </section>
       </main>
     </>
