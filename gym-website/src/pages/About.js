@@ -8,50 +8,77 @@ import BannerText from '../components/BannerText'
 import AboutCard from '../components/About/AboutCard'
 
 const About = () => {
+  const aboutCards = [
+    {
+        key: 1,
+      imageClass: 'about-pool',
+      title: 'Olympic Pool',
+      text: 'Come swim some laps in our pool',
+    },
+    {
+        key: 2,
+      imageClass: 'about-pool',
+      title: 'Testing',
+      text: 'Come swim some laps in our pool',
+    },
+    {
+        key: 3,
+      imageClass: 'about-pool',
+      title: 'Testing',
+      text: 'Come swim some laps in our pool',
+    },
+    {
+        key: 4,
+      imageClass: 'about-pool',
+      title: 'Testing',
+      text: 'Come swim some laps in our pool',
+    },
+    {
+        key: 5,
+      imageClass: 'about-pool',
+      title: 'Testing',
+      text: 'Come swim some laps in our pool',
+    },
+    {
+        key: 6,
+      imageClass: 'about-pool',
+      title: 'Testing',
+      text: 'Come swim some laps in our pool',
+    },
+  ]
 
+  let aboutCardsJsx
 
-    const aboutCards = [
-        {
-            imageClass: 'about-pool',
-            title: 'Olympic Pool',
-            text: 'Come swim some laps in our pool'
-        },
-        {
-            imageClass: 'about-pool',
-            title: 'Olympic Pool',
-            text: 'Come swim some laps in our pool'
-        },
-        {
-            imageClass: 'about-pool',
-            title: 'Olympic Pool',
-            text: 'Come swim some laps in our pool'
-        },
-        {
-            imageClass: 'about-pool',
-            title: 'Olympic Pool',
-            text: 'Come swim some laps in our pool'
-        },
-        {
-            imageClass: 'about-pool',
-            title: 'Olympic Pool',
-            text: 'Come swim some laps in our pool'
-        },
-        {
-            imageClass: 'about-pool',
-            title: 'Olympic Pool',
-            text: 'Come swim some laps in our pool'
-        },
-    ]
+  const aboutCardCreator = () => {
 
-    // const aboutCardsJsx = aboutCards.map((card) => <AboutCard imageClass={aboutCards[card].imageClass} title={aboutCards[card].title} text={aboutCards[card].text} />
-    //   )
+    aboutCardsJsx = aboutCards.map((card) => (
+        <AboutCard
+          imageClass={aboutCards[card].imageClass}
+          title={aboutCards[card].title}
+          text={aboutCards[card].text}
+        />
+      ))
+    
+    // return (
+    //   <>
+    //     {aboutCards.map((card) => (
+    //       <AboutCard
+    //         imageClass={aboutCards[card].imageClass}
+    //         title={aboutCards[card].title}
+    //         text={aboutCards[card].text}
+    //       />
+    //     ))}
+    //   </>
+    // )
+  }
 
+//   aboutCardCreator()
 
   // https://unsplash.com/photos/JbI04nYfaJk
   return (
     <>
       <div className="banner-about banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
-        <BannerText  title="About our Gym" />
+        <BannerText title="About our Gym" />
       </div>
       <main>
         <section className="flex flex-col justify-center items-center px-8">
@@ -65,12 +92,19 @@ const About = () => {
         </section>
         <section>
           <h2>We have everything you could ever need</h2>
-          <AboutCard imageClass={aboutCards[0].imageClass} title={aboutCards[0].title} text={aboutCards[0].text} />
-          {}
+          {/* <AboutCard
+            imageClass={aboutCards[0].imageClass}
+            title={aboutCards[0].title}
+            text={aboutCards[0].text}
+          /> */}
+          {aboutCards.map((item) => (
+            <AboutCard key={item.key} imageClass={item.imageClass} title={item.title} text={item.text} />
+          ))}
+          {/* {aboutCardsJsx} */}
           <div className="text-white m-7 h-[50vh]">
             {/* Machine */}
             {/* https://unsplash.com/photos/-b4GeymbJl8 */}
-            <div className='h-2/3 about-pool bg-no-repeat bg-cover bg-center'>
+            <div className="h-2/3 about-pool bg-no-repeat bg-cover bg-center">
               {/* <img className='w-full ' src={aboutPool} alt="" /> */}
             </div>
             <div className="bg-black test h-1/3">
