@@ -5,13 +5,53 @@ import aboutDumbbells from '../img/about-dumbbells.jpg'
 import ptImage from '../img/personal-training-woman-ropes.jpg'
 import classesImage from '../img/personal-training-yoga.jpg'
 import BannerText from '../components/BannerText'
+import AboutCard from '../components/About/AboutCard'
 
 const About = () => {
+
+
+    const aboutCards = [
+        {
+            imageClass: 'about-pool',
+            title: 'Olympic Pool',
+            text: 'Come swim some laps in our pool'
+        },
+        {
+            imageClass: 'about-pool',
+            title: 'Olympic Pool',
+            text: 'Come swim some laps in our pool'
+        },
+        {
+            imageClass: 'about-pool',
+            title: 'Olympic Pool',
+            text: 'Come swim some laps in our pool'
+        },
+        {
+            imageClass: 'about-pool',
+            title: 'Olympic Pool',
+            text: 'Come swim some laps in our pool'
+        },
+        {
+            imageClass: 'about-pool',
+            title: 'Olympic Pool',
+            text: 'Come swim some laps in our pool'
+        },
+        {
+            imageClass: 'about-pool',
+            title: 'Olympic Pool',
+            text: 'Come swim some laps in our pool'
+        },
+    ]
+
+    // const aboutCardsJsx = aboutCards.map((card) => <AboutCard imageClass={aboutCards[card].imageClass} title={aboutCards[card].title} text={aboutCards[card].text} />
+    //   )
+
+
   // https://unsplash.com/photos/JbI04nYfaJk
   return (
     <>
       <div className="banner-about banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
-        <BannerText title="About our Gym" />
+        <BannerText  title="About our Gym" />
       </div>
       <main>
         <section className="flex flex-col justify-center items-center px-8">
@@ -25,11 +65,13 @@ const About = () => {
         </section>
         <section>
           <h2>We have everything you could ever need</h2>
-          <div className="text-white m-7 h-[600px]">
+          <AboutCard imageClass={aboutCards[0].imageClass} title={aboutCards[0].title} text={aboutCards[0].text} />
+          {}
+          <div className="text-white m-7 h-[50vh]">
             {/* Machine */}
             {/* https://unsplash.com/photos/-b4GeymbJl8 */}
-            <div className='h-2/3 overflow-hidden object-bottom'>
-              <img className='w-full ' src={aboutPool} alt="" />
+            <div className='h-2/3 about-pool bg-no-repeat bg-cover bg-center'>
+              {/* <img className='w-full ' src={aboutPool} alt="" /> */}
             </div>
             <div className="bg-black test h-1/3">
               <h3>Machines</h3>

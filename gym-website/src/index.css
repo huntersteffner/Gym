@@ -20,6 +20,12 @@
   height: 50vh;
 }
 
+/* About Cards */
+.about-pool {
+  background-image: url('../src/img/about-pool.jpg');
+
+}
+
 /* PT Cards */
 .pt-card-w {
   width: 47%;
@@ -102,6 +108,3 @@
   @apply flex flex-col border-b py-3 mt-3 w-1/2 space-y-2 md:border-b-0;
 }
 
-/* .test {
-  height: 50%;
-} */
