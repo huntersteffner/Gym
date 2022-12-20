@@ -17,7 +17,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <Routes>
+      <Routes >
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/personal-training' element={<PersonalTraining/>} />
@@ -25,10 +25,6 @@ export default function App() {
         <Route path='/membership' element={<Membership/>} />
         <Route path='/careers' element={<Careers/>} />
       </Routes>
-      
-      {/* <Home />
-      <About/>
-      <PersonalTraining/> */}
       <Footer/>
     </>
   )

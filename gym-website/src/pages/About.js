@@ -4,6 +4,7 @@ import BannerText from '../components/BannerText'
 import AboutCard from '../components/About/AboutCard'
 
 import { Link } from 'react-router-dom'
+import AboutTrainingCard from '../components/About/AboutTrainingCard'
 
 const About = () => {
   const aboutCards = [
@@ -51,10 +52,6 @@ const About = () => {
     },
   ]
 
-  
-
- 
-
   // https://unsplash.com/photos/JbI04nYfaJk
   return (
     <>
@@ -86,12 +83,28 @@ const About = () => {
         </section>
         <section>
           <h2>Training</h2>
-          <div className='flex flex-col justify-center items-center text-white bg-black'>
-            <h3>Personal Training</h3>
-            <img src={ptImage} alt="" />
-            <button>
-              <Link to="/personal-training">Click Here</Link>
-            </button>
+          {/* <div className="flex flex-row items-center text-white bg-black">
+            <div className='w-2/3'>
+              <img className='w-full h-full' src={ptImage} alt="" />
+            </div>
+            <div >
+              <h3>Personal Training</h3>
+              <button>
+                <Link to="/personal-training">Click Here</Link>
+              </button>
+            </div>
+          </div> */}
+          <div className='flex flex-col md:flex-row'>
+            <AboutTrainingCard
+              image={ptImage}
+              alt="Personal Training"
+              reverse={false}
+            />
+            <AboutTrainingCard
+              image={classesImage}
+              alt="Yoga Class"
+              reverse={true}
+            />
           </div>
           <div>
             <h3>Group Classes</h3>
