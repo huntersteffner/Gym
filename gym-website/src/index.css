@@ -21,10 +21,25 @@
 }
 
 /* About Cards */
+.about-legpress {
+  background-image: url('../src/img/about-legpress.jpg');
+}
+.about-dumbbells {
+  background-image: url('../src/img/about-dumbbells.jpg');
+}
 .about-pool {
   background-image: url('../src/img/about-pool.jpg');
-
 }
+.about-push {
+  background-image: url('../src/img/about-push.jpg');
+}
+.about-deadlift {
+  background-image: url('../src/img/about-deadlift.jpg');
+}
+.about-trx {
+  background-image: url('../src/img/about-trx.jpg');
+}
+
 
 /* PT Cards */
 .pt-card-w {

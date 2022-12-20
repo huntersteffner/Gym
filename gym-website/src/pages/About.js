@@ -1,7 +1,3 @@
-import aboutPush from '../img/about-push.jpg'
-import aboutLegPress from '../img/about-legpress.jpg'
-import aboutPool from '../img/about-pool.jpg'
-import aboutDumbbells from '../img/about-dumbbells.jpg'
 import ptImage from '../img/personal-training-woman-ropes.jpg'
 import classesImage from '../img/personal-training-yoga.jpg'
 import BannerText from '../components/BannerText'
@@ -10,69 +6,52 @@ import AboutCard from '../components/About/AboutCard'
 const About = () => {
   const aboutCards = [
     {
-        key: 1,
+      key: 1,
+      // https://unsplash.com/photos/-b4GeymbJl8
+      imageClass: 'about-legpress',
+      title: 'State of the Art Equipment',
+      text: 'Hit every muscle group with our high quality machines.',
+    },
+    {
+      key: 2,
+      // https://unsplash.com/photos/rA5aJvQ2l6g
+      imageClass: 'about-push',
+      title: 'HIIT',
+      text: 'Plenty of space for functional workouts.',
+    },
+    {
+      key: 3,
+      // https://unsplash.com/photos/CQfNt66ttZM
+      imageClass: 'about-dumbbells',
+      title: 'Freeweights',
+      text: `We've got all the dumbbells and kettlebells you could possibly need.`,
+    },
+    {
+      key: 4,
+      // https://unsplash.com/photos/sdnyvKH4PsA
       imageClass: 'about-pool',
       title: 'Olympic Pool',
       text: 'Come swim some laps in our pool',
     },
     {
-        key: 2,
-      imageClass: 'about-pool',
-      title: 'Testing',
-      text: 'Come swim some laps in our pool',
+      key: 5,
+      // https://unsplash.com/photos/b8tSWXHsjk0
+      imageClass: 'about-deadlift',
+      title: 'Heavy Weights',
+      text: 'Build up your strength with deadlifts and squats.',
     },
     {
-        key: 3,
-      imageClass: 'about-pool',
-      title: 'Testing',
-      text: 'Come swim some laps in our pool',
-    },
-    {
-        key: 4,
-      imageClass: 'about-pool',
-      title: 'Testing',
-      text: 'Come swim some laps in our pool',
-    },
-    {
-        key: 5,
-      imageClass: 'about-pool',
-      title: 'Testing',
-      text: 'Come swim some laps in our pool',
-    },
-    {
-        key: 6,
-      imageClass: 'about-pool',
-      title: 'Testing',
-      text: 'Come swim some laps in our pool',
+      key: 6,
+      // https://unsplash.com/photos/e1vAwZzbe5I
+      imageClass: 'about-trx',
+      title: 'And so much more!',
+      text: `We've got everything we need to get in the perfect workout!`,
     },
   ]
 
-  let aboutCardsJsx
+  
 
-  const aboutCardCreator = () => {
-
-    aboutCardsJsx = aboutCards.map((card) => (
-        <AboutCard
-          imageClass={aboutCards[card].imageClass}
-          title={aboutCards[card].title}
-          text={aboutCards[card].text}
-        />
-      ))
-    
-    // return (
-    //   <>
-    //     {aboutCards.map((card) => (
-    //       <AboutCard
-    //         imageClass={aboutCards[card].imageClass}
-    //         title={aboutCards[card].title}
-    //         text={aboutCards[card].text}
-    //       />
-    //     ))}
-    //   </>
-    // )
-  }
-
-//   aboutCardCreator()
+ 
 
   // https://unsplash.com/photos/JbI04nYfaJk
   return (
@@ -92,46 +71,15 @@ const About = () => {
         </section>
         <section>
           <h2>We have everything you could ever need</h2>
-          {/* <AboutCard
-            imageClass={aboutCards[0].imageClass}
-            title={aboutCards[0].title}
-            text={aboutCards[0].text}
-          /> */}
-          {aboutCards.map((item) => (
-            <AboutCard key={item.key} imageClass={item.imageClass} title={item.title} text={item.text} />
-          ))}
-          {/* {aboutCardsJsx} */}
-          <div className="text-white m-7 h-[50vh]">
-            {/* Machine */}
-            {/* https://unsplash.com/photos/-b4GeymbJl8 */}
-            <div className="h-2/3 about-pool bg-no-repeat bg-cover bg-center">
-              {/* <img className='w-full ' src={aboutPool} alt="" /> */}
-            </div>
-            <div className="bg-black test h-1/3">
-              <h3>Machines</h3>
-              <p>Our equipment have the newest equipment and cleanest.</p>
-            </div>
-          </div>
-          <div>
-            {/* FUnctional */}
-            <h3>Functional Workouts</h3>
-            <p>Our equipment have the newest equipment and cleanest.</p>
-            <img src={aboutPush} alt="" />
-            {/* https://unsplash.com/photos/rA5aJvQ2l6g */}
-          </div>
-          <div>
-            {/* Freeweights */}
-            <h3>Freeweights</h3>
-            <p>Our equipment have the newest equipment and cleanest.</p>
-            {/* https://unsplash.com/photos/CQfNt66ttZM */}
-            <img src={aboutDumbbells} alt="" />
-          </div>
-          <div>
-            {/* Pool */}
-            <h3>Pool</h3>
-            <p>Our equipment have the newest equipment and cleanest.</p>
-            {/* https://unsplash.com/photos/sdnyvKH4PsA */}
-            <img src={aboutPool} alt="" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+            {aboutCards.map((item) => (
+              <AboutCard
+                key={item.key}
+                imageClass={item.imageClass}
+                title={item.title}
+                text={item.text}
+              />
+            ))}
           </div>
         </section>
         <section>
