@@ -1,6 +1,6 @@
 const AboutCard = ({imageClass, title, text}) => {
     return (
-        <div className="flex flex-col text-white m-7 h-[30rem] md:flex-row md:h-96">
+        <div className="flex flex-col text-white h-[30rem] md:flex-row md:h-96">
             {/* Machine */}
             {/* https://unsplash.com/photos/-b4GeymbJl8 */}
             <div className={`h-3/5 ${imageClass} bg-no-repeat bg-cover bg-center md:h-full md:w-2/3`}>

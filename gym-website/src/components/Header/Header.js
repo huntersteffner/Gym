@@ -22,7 +22,7 @@ export default function Header() {
   
 
   return (
-    <header className="flex justify-around bg-black text-white">
+    <header id='header' className="flex justify-around bg-black text-white">
       <Logo />
       {/* Desktop Menu */}
       {isComputer && (

@@ -3,6 +3,8 @@ import classesImage from '../img/personal-training-yoga.jpg'
 import BannerText from '../components/BannerText'
 import AboutCard from '../components/About/AboutCard'
 
+import { Link } from 'react-router-dom'
+
 const About = () => {
   const aboutCards = [
     {
@@ -71,7 +73,7 @@ const About = () => {
         </section>
         <section>
           <h2>We have everything you could ever need</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 space-y-4 gap-0 lg:grid-cols-2 lg:space-y-0 lg:gap-4 xl:grid-cols-3">
             {aboutCards.map((item) => (
               <AboutCard
                 key={item.key}
@@ -84,18 +86,18 @@ const About = () => {
         </section>
         <section>
           <h2>Training</h2>
-          <div>
+          <div className='flex flex-col justify-center items-center text-white bg-black'>
             <h3>Personal Training</h3>
             <img src={ptImage} alt="" />
             <button>
-              <a href="/personal-training">Click Here</a>
+              <Link to="/personal-training">Click Here</Link>
             </button>
           </div>
           <div>
             <h3>Group Classes</h3>
             <img src={classesImage} alt="" />
             <button>
-              <a href="/group-classes">Click Here</a>
+              <Link to="/group-classes">Click Here</Link>
             </button>
           </div>
         </section>
