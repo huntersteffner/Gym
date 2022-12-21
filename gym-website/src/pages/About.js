@@ -1,5 +1,6 @@
 import ptImage from '../img/personal-training-woman-ropes.jpg'
 import classesImage from '../img/personal-training-yoga.jpg'
+import aboutManager from '../img/about-manager.jpg'
 import BannerText from '../components/BannerText'
 import AboutCard from '../components/About/AboutCard'
 
@@ -68,9 +69,9 @@ const About = () => {
             laudantium consequatur, corporis similique tenetur quidem quae.
           </p>
         </section>
-        <section>
+        <section className='container flex flex-col mx-auto'>
           <h2>We have everything you could ever need</h2>
-          <div className="grid grid-cols-1 space-y-4 gap-0 lg:grid-cols-2 lg:space-y-0 lg:gap-4 xl:grid-cols-3">
+          <div className="grid grid-cols-1 space-y-4 gap-0 lg:grid-cols-2 lg:space-y-0 lg:gap-4">
             {aboutCards.map((item) => (
               <AboutCard
                 key={item.key}
@@ -81,7 +82,7 @@ const About = () => {
             ))}
           </div>
         </section>
-        <section>
+        <section className='container mx-auto'>
           <h2>Training</h2>
           {/* <div className="flex flex-row items-center text-white bg-black">
             <div className='w-2/3'>
@@ -106,12 +107,12 @@ const About = () => {
               reverse={true}
             />
           </div>
-          <div>
-            <h3>Group Classes</h3>
-            <img src={classesImage} alt="" />
-            <button>
-              <Link to="/group-classes">Click Here</Link>
-            </button>
+        </section>
+        <section className='container mx-auto'>
+          {/* Manager */}
+          <div className=''>
+            {/* https://unsplash.com/photos/eaUUbS-42YQ */}
+            <img className='rounded-full overflow-hidden' src={aboutManager} alt="" />
           </div>
         </section>
       </main>

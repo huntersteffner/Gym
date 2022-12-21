@@ -37,7 +37,7 @@ const PersonalTraining = (props) => {
         <BannerText title='Personal Training'/>
       </div>
 
-      <div >
+      <div className='container mx-auto'>
         <p className="text-xl m-4">
           Your fitness journey does not have to be something that do alone. Our
           team of personal trainers is ready to do everything to help you
@@ -49,7 +49,7 @@ const PersonalTraining = (props) => {
         </p>
       </div>
       {/* Types of training */}
-      <div className="flex flex-wrap">
+      <div className="container mx-auto flex flex-wrap">
         <div className="space-y-3 md:grid md:grid-cols-2 md:gap-1 md:space-y-0">
           {/* https://unsplash.com/photos/8uzJGgJ1_3w */}
           <PtCard
