@@ -7,7 +7,7 @@ const AboutTrainingCard = ({ image, alt, reverse }) => {
         reverse ? 'md:flex-row-reverse' : 'md:flex-row'
       }`}
     >
-      <div className="h-full md:w-[17rem] lg:w-[23rem] xl:w-[32rem]">
+      <div className="h-[22rem] w-full md:h-full md:w-[17rem] lg:w-[23rem] xl:w-[32rem]">
         <img className="w-full h-full object-cover" src={image} alt={alt} />
       </div>
 
