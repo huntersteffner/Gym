@@ -82,17 +82,7 @@ const About = () => {
         </section>
         <section className="container mx-auto">
           <h2>Training</h2>
-          {/* <div className="flex flex-row items-center text-white bg-black">
-            <div className='w-2/3'>
-              <img className='w-full h-full' src={ptImage} alt="" />
-            </div>
-            <div >
-              <h3>Personal Training</h3>
-              <button>
-                <Link to="/personal-training">Click Here</Link>
-              </button>
-            </div>
-          </div> */}
+          
           <div className="flex flex-col md:flex-row">
             <AboutTrainingCard
               image={ptImage}
