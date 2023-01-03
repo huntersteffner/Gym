@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 /* Banner classes */
 .banner-home {
   background-image: url('../src/img/empty-gym.jpg');
@@ -15,6 +21,10 @@
 }
 .banner-careers {
   background-image: url('../src/img/careers-kettlebells.jpg');
+}
+.banner-membership {
+  /* https://unsplash.com/photos/eCKIeu1Lkok */
+  background-image: url('../src/img/membership-crunches.jpg');
 }
 .banner-group-classes {
   background-image: url('../src/img/personal-training-yoga.jpg');

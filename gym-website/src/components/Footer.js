@@ -22,6 +22,7 @@ const Footer = () => {
         <Link to="/membership">Membership</Link>
         <Link to="/careers">Careers</Link>
       </div>
+      
       <div className="py-3 mt-3">
         <FooterSocial />
       </div>
