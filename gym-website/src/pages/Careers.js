@@ -86,17 +86,17 @@ const Careers = () => {
       <div className="banner-careers banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
         <BannerText title="Careers" />
       </div>
-      <section>
-        <h1>Looking for a job!</h1>
-        <p>Check out the list of where we are currently hiring!</p>
+      <section className='container mx-auto flex flex-col justify-center items-center text-center'>
+        <h1 className='text-3xl'>Looking for a job!</h1>
+        <p className='text-2xl'>Check out the list of where we are currently hiring!</p>
       </section>
-      <section className="container mx-auto flex justify-between">
-        <div>
-          <h2>Open Positions</h2>
-          <div id='teamMember' className='text-2xl' onClick={jobHandler}>Team Member</div>
-          <div id='personalTrainer' className='text-2xl' onClick={jobHandler}>Personal Trainer</div>
-          <div id='fitnessInstructor' className='text-2xl' onClick={jobHandler}>Fitness Instructor</div>
-          <div id='yogaInstructor' className='text-2xl' onClick={jobHandler}>Yoga Instructor</div>
+      <section className="container mx-auto flex flex-col justify-between items-center md:flex-row md:items-start">
+        <div className='flex flex-col m-2 space-y-2 md:flex-col'>
+          <h2 className='text-xl font-bold text-center underline md:text-3xl'>Open Positions</h2>
+          <div id='teamMember' className='careers-button' onClick={jobHandler}>Team Member</div>
+          <div id='personalTrainer' className='careers-button' onClick={jobHandler}>Personal Trainer</div>
+          <div id='fitnessInstructor' className='careers-button' onClick={jobHandler}>Fitness Instructor</div>
+          <div id='yogaInstructor' className='careers-button' onClick={jobHandler}>Yoga Instructor</div>
           
         </div>
         <CareersCard image={job.image} title={job.title} text={job.text}responsibilities={job.responsibilities}/>
