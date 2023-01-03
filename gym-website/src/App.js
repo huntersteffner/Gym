@@ -11,6 +11,8 @@ import Membership from './pages/Membership'
 import Careers from './pages/Careers'
 
 
+
+
 export default function App() {
 
   
@@ -26,6 +28,7 @@ export default function App() {
         <Route path='/careers' element={<Careers/>} />
       </Routes>
       <Footer/>
+      
     </>
   )
 }
