@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Gym/static/css/main.b2a6d974.css",
-    "main.js": "/Gym/static/js/main.ec59b2f9.js",
+    "main.css": "/Gym/static/css/main.e01975f1.css",
+    "main.js": "/Gym/static/js/main.37612053.js",
     "static/media/about-trx.jpg": "/Gym/static/media/about-trx.fd7f8c70a9d8f96ba433.jpg",
     "static/media/careers-kettlebells.jpg": "/Gym/static/media/careers-kettlebells.6508a069e4931f0e4ede.jpg",
     "static/media/about-deadlift.jpg": "/Gym/static/media/about-deadlift.9c886df96f12d9463f00.jpg",
@@ -13,20 +13,21 @@
     "static/media/personal-training-woman-ropes.jpg": "/Gym/static/media/personal-training-woman-ropes.88009a60ad452583093b.jpg",
     "static/media/personal-training-bench.jpg": "/Gym/static/media/personal-training-bench.dc2ca84ce363affadff0.jpg",
     "static/media/personal-training-yoga.jpg": "/Gym/static/media/personal-training-yoga.53313a7e6cbfcb78e98f.jpg",
-    "static/media/squat.jpg": "/Gym/static/media/squat.bad108e9e52698342a69.jpg",
+    "static/media/membership-squat.jpg": "/Gym/static/media/membership-squat.bad108e9e52698342a69.jpg",
     "static/media/about-legpress.jpg": "/Gym/static/media/about-legpress.894725a86f755d68ac14.jpg",
     "static/media/personal-training-form-check.jpg": "/Gym/static/media/personal-training-form-check.aa632471d5ef19a09a23.jpg",
     "static/media/about-manager1.jpg": "/Gym/static/media/about-manager1.55e26b1dd13ea452ad43.jpg",
     "static/media/about-pool.jpg": "/Gym/static/media/about-pool.a88fe63c1b11b16900d7.jpg",
+    "static/media/membership-crunches.jpg": "/Gym/static/media/membership-crunches.735d5b154a9af7857993.jpg",
     "static/media/about-dumbbells.jpg": "/Gym/static/media/about-dumbbells.83f47e8a55b707d7a379.jpg",
     "static/media/personal-training-treadmill.jpg": "/Gym/static/media/personal-training-treadmill.b1404f0bb8911e2b2d63.jpg",
     "static/media/empty-gym.jpg": "/Gym/static/media/empty-gym.e80d726ca43d6bbb156b.jpg",
     "index.html": "/Gym/index.html",
-    "main.b2a6d974.css.map": "/Gym/static/css/main.b2a6d974.css.map",
-    "main.ec59b2f9.js.map": "/Gym/static/js/main.ec59b2f9.js.map"
+    "main.e01975f1.css.map": "/Gym/static/css/main.e01975f1.css.map",
+    "main.37612053.js.map": "/Gym/static/js/main.37612053.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2a6d974.css",
-    "static/js/main.ec59b2f9.js"
+    "static/css/main.e01975f1.css",
+    "static/js/main.37612053.js"
   ]
 }
