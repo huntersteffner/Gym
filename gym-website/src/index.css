@@ -194,3 +194,6 @@ input[type=file] {
   @apply flex flex-col border-b py-3 mt-3 space-y-2 md:border-b-0;
 }
 
+.form-checkbox-div {
+  @apply flex justify-between;
+}
