@@ -4,7 +4,7 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 const Logo = () => {
     
     return (
-        <Link to="/" className="flex flex-col self-start justify-center items-center">
+        <Link to="/Gym/" className="flex flex-col self-start justify-center items-center">
         <div>
           <IoBarbell className="text-6xl" />
         </div>

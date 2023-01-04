@@ -14,7 +14,7 @@ const AboutTrainingCard = ({ image, alt, reverse }) => {
       <div className="flex flex-col justify-center items-center h-28 md:h-full md:p-4">
         <h3 className='font-bold text-xl'>Personal Training</h3>
         <button>
-          <Link to="/personal-training">Click Here</Link>
+          <Link to="/Gym/personal-training">Click Here</Link>
         </button>
       </div>
     </div>

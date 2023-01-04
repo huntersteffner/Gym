@@ -6,12 +6,12 @@ const MobileMenu = ({open, linkSelect}) => {
       <div className="bg-black opacity-80 w-full h-full z-30 absolute"></div>
       <nav className="flex flex-col text-3xl z-40 text-center">
         
-        <MobileMenuLink linkSelect={linkSelect} url='/' title={'Home'}/>
-        <MobileMenuLink linkSelect={linkSelect} url='/about' title={'About'}/>
-        <MobileMenuLink linkSelect={linkSelect} url='/personal-training' title={'Personal Training'}/>
-        <MobileMenuLink linkSelect={linkSelect} url='/group-classes' title={'Group Classes'}/>
-        <MobileMenuLink linkSelect={linkSelect} url='/membership' title={'Membership'}/>
-        <MobileMenuLink linkSelect={linkSelect} url='/careers' title={'Careers'}/>
+        <MobileMenuLink linkSelect={linkSelect} url='/Gym/' title={'Home'}/>
+        <MobileMenuLink linkSelect={linkSelect} url='/Gym/about' title={'About'}/>
+        <MobileMenuLink linkSelect={linkSelect} url='/Gym/personal-training' title={'Personal Training'}/>
+        <MobileMenuLink linkSelect={linkSelect} url='/Gym/group-classes' title={'Group Classes'}/>
+        <MobileMenuLink linkSelect={linkSelect} url='/Gym/membership' title={'Membership'}/>
+        <MobileMenuLink linkSelect={linkSelect} url='/Gym/careers' title={'Careers'}/>
       </nav>
     </div>
   )

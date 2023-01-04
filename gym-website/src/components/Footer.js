@@ -15,12 +15,12 @@ const Footer = () => {
         <p>Phone: 555 555 5555</p>
       </div>
       <div className="footer-section">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/personal-training">Personal Training</Link>
-        <Link to="/group-classes">Group Classes</Link>
-        <Link to="/membership">Membership</Link>
-        <Link to="/careers">Careers</Link>
+        <Link to="/Gym">Home</Link>
+        <Link to="/Gym/about">About</Link>
+        <Link to="/Gym/personal-training">Personal Training</Link>
+        <Link to="/Gym/group-classes">Group Classes</Link>
+        <Link to="/Gym/membership">Membership</Link>
+        <Link to="/Gym/careers">Careers</Link>
       </div>
       
       <div className="py-3 mt-3">

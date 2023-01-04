@@ -27,12 +27,12 @@ export default function Header() {
       {/* Desktop Menu */}
       {isComputer && (
         <nav className="hidden space-x-4 text-3xl md:flex">
-          <CustomLink to="/">Home</CustomLink>
-          <CustomLink to="/about">About</CustomLink>
-          <CustomLink to="/personal-training">Personal Training</CustomLink>
-          <CustomLink to="/group-classes">Group Classes</CustomLink>
-          <CustomLink to="/membership">Membership</CustomLink>
-          <CustomLink to="/careers">Careers</CustomLink>
+          <CustomLink to="/Gym">Home</CustomLink>
+          <CustomLink to="/Gym/about">About</CustomLink>
+          <CustomLink to="/Gym/personal-training">Personal Training</CustomLink>
+          <CustomLink to="/Gym/group-classes">Group Classes</CustomLink>
+          <CustomLink to="/Gym/membership">Membership</CustomLink>
+          <CustomLink to="/Gym/careers">Careers</CustomLink>
         </nav>
       )}
       {isMobile && (

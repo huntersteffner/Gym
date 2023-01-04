@@ -20,12 +20,12 @@ export default function App() {
     <>
       <Header />
       <Routes >
-        <Route path='/' element={<Home/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/personal-training' element={<PersonalTraining/>} />
-        <Route path='/group-classes' element={<GroupClasses/>} />
-        <Route path='/membership' element={<Membership/>} />
-        <Route path='/careers' element={<Careers/>} />
+        <Route path='/Gym' element={<Home/>} />
+        <Route path='/Gym/about' element={<About/>} />
+        <Route path='/Gym/personal-training' element={<PersonalTraining/>} />
+        <Route path='/Gym/group-classes' element={<GroupClasses/>} />
+        <Route path='/Gym/membership' element={<Membership/>} />
+        <Route path='/Gym/careers' element={<Careers/>} />
       </Routes>
       <Footer/>
       
