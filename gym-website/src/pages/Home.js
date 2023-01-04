@@ -16,11 +16,12 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <section className="bg-amber-800 text-white">
-        <div className="container mx-auto">
-          <h2>Industry's best Equipment</h2>
-          <h2>Training</h2>
-          <h2>Great Community</h2>
+      <section className="bg-amber-800 text-white ">
+        <div className='container mx-auto flex flex-col items-center justify-center text-xl text-center space-x-6 md:text-3xl lg:text-5xl md:flex-row'>
+
+        <h2>Industry's Best Equipment</h2>
+        <h2>Training</h2>
+        <h2>Great Community</h2>
         </div>
       </section>
       <section className="bg-black text-white">
