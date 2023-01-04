@@ -88,11 +88,13 @@ const About = () => {
               image={ptImage}
               alt="Personal Training"
               reverse={false}
+              link='personal-training'
             />
             <AboutTrainingCard
               image={classesImage}
-              alt="Yoga Class"
+              alt="Group Classes"
               reverse={true}
+              link='group-classes'
             />
           </div>
         </section>

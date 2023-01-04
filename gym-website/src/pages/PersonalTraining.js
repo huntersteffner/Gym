@@ -35,20 +35,22 @@ const PersonalTraining = (props) => {
     // <section className="bg-lightGrey">
     <>
       <div className="banner-pt banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
-        <BannerText title='Personal Training'/>
+        <BannerText title="Personal Training" />
       </div>
 
-      <div className='container mx-auto bg-amber-800 text-white'>
-        <p className="text-xl p-4">
-          Your fitness journey doesn't have to be something that do alone. Our
-          team of personal trainers is ready to do everything to help you
-          achieve all of your fitness goals. Our staff is fully accredited with
-          the latest in fitness training standards to help push through any
-          roadblock you may encounter. From beginner to advanced, our trainers
-          can help you no matter what your skill level is, and for a reasonable
-          affordable price.
-        </p>
-      </div>
+      <section className=" bg-amber-800 text-white w-full">
+        <div className='container mx-auto'>
+          <p className="text-xl p-4">
+            Your fitness journey doesn't have to be something that do alone. Our
+            team of personal trainers is ready to do everything to help you
+            achieve all of your fitness goals. Our staff is fully accredited
+            with the latest in fitness training standards to help push through
+            any roadblock you may encounter. From beginner to advanced, our
+            trainers can help you no matter what your skill level is, and for a
+            reasonable affordable price.
+          </p>
+        </div>
+      </section>
       {/* Types of training */}
       <div className="container mx-auto flex flex-wrap">
         <div className="space-y-3 md:grid md:grid-cols-2 md:gap-1 md:space-y-0">
@@ -83,7 +85,7 @@ const PersonalTraining = (props) => {
         <h1>Hello</h1>
       </div>
       <PtForm />
-      <PtModal/>
+      <PtModal />
     </>
   )
 }

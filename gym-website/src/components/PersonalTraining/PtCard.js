@@ -2,7 +2,7 @@ const PtCard = (props) => {
   return (
     <div className="flex flex-col justify-between bg-black">
       <div className="text-white">
-        <h2 className="text-7xl text-center">{props.title}</h2>
+        <h2 className="text-5xl text-center">{props.title}</h2>
 
         <p className="text-xl p-5 text-justify">{props.body}</p>
       </div>
