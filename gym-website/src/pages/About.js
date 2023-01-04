@@ -107,7 +107,7 @@ const About = () => {
             />
           </div>
           <div className="flex flex-col justify-center items-center">
-            <h4 className="text-2xl font-bold">
+            <h4 className="text-2xl font-bold text-center">
               Michael Wolfe - Owner & Founder
             </h4>
             <p className="text-xl m-2">
