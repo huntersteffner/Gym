@@ -65,7 +65,7 @@
 } */
 
 /* CSS */
-.careers-button {
+.btn {
   background-color: #fff000;
   border-radius: 12px;
   color: #000;
@@ -85,14 +85,14 @@
 
 
 
-.careers-button:not(:disabled):hover,
-.careers-button:not(:disabled):focus {
+.btn:not(:disabled):hover,
+.btn:not(:disabled):focus {
   outline: 0;
   background: #f4e603;
   box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
 }
 
-.careers-button:disabled {
+.btn:disabled {
   filter: saturate(0.2) opacity(0.5);
   -webkit-filter: saturate(0.2) opacity(0.5);
   cursor: not-allowed;
@@ -104,6 +104,17 @@ input[type=file] {
   left: 0;
   top: 0;
   opacity: 0;
+}
+
+/* Membership */
+.membership-icons-container {
+  @apply flex flex-col items-center justify-center text-center;
+}
+.membership-icons-icon {
+  @apply text-[10rem] text-white;
+}
+.membership-icons-p {
+  @apply text-3xl;
 }
 
 /* Group classes */
@@ -180,6 +191,6 @@ input[type=file] {
 }
 
 .footer-section {
-  @apply flex flex-col border-b py-3 mt-3 w-1/2 space-y-2 md:border-b-0;
+  @apply flex flex-col border-b py-3 mt-3 space-y-2 md:border-b-0;
 }
 

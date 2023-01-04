@@ -1,4 +1,4 @@
-import squat from '../../img/squat.jpg'
+// import squat from '../../img/squat.jpg'
 
 const PtFormFilled = () => {
     return (
@@ -13,7 +13,7 @@ const PtFormFilled = () => {
           </div>
           {/* https://unsplash.com/photos/Z4Q9KHw9ofE */}
     
-          <img className="w-2/3 md:w-1/2" src={squat} alt="" />
+          {/* <img className="w-2/3 md:w-1/2" src={squat} alt="" /> */}
         </div>
       )
 }

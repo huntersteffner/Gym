@@ -32,14 +32,15 @@ const PersonalTraining = (props) => {
     },
   }
   return (
-    <section className="bg-lightGrey">
+    // <section className="bg-lightGrey">
+    <>
       <div className="banner-pt banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
         <BannerText title='Personal Training'/>
       </div>
 
-      <div className='container mx-auto'>
-        <p className="text-xl m-4">
-          Your fitness journey does not have to be something that do alone. Our
+      <div className='container mx-auto bg-amber-800 text-white'>
+        <p className="text-xl p-4">
+          Your fitness journey doesn't have to be something that do alone. Our
           team of personal trainers is ready to do everything to help you
           achieve all of your fitness goals. Our staff is fully accredited with
           the latest in fitness training standards to help push through any
@@ -83,7 +84,7 @@ const PersonalTraining = (props) => {
       </div>
       <PtForm />
       <PtModal/>
-    </section>
+    </>
   )
 }
 

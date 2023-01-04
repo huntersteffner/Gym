@@ -33,7 +33,7 @@ const CareersCard = ({ image, title, text, responsibilities }) => {
               <div className="text-xl">{resume && '✅ File Selected'}</div>
           </div>
         </div>
-        <button className="careers-button">Submit</button>
+        <button className="btn">Submit</button>
       </div>
     </div>
   )

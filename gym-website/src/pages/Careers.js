@@ -93,10 +93,10 @@ const Careers = () => {
       <section className="container mx-auto flex flex-col justify-between items-center md:flex-row md:items-start">
         <div className='flex flex-col m-2 space-y-2 md:flex-col'>
           <h2 className='text-xl font-bold text-center underline md:text-3xl'>Open Positions</h2>
-          <div id='teamMember' className='careers-button' onClick={jobHandler}>Team Member</div>
-          <div id='personalTrainer' className='careers-button' onClick={jobHandler}>Personal Trainer</div>
-          <div id='fitnessInstructor' className='careers-button' onClick={jobHandler}>Fitness Instructor</div>
-          <div id='yogaInstructor' className='careers-button' onClick={jobHandler}>Yoga Instructor</div>
+          <div id='teamMember' className='btn' onClick={jobHandler}>Team Member</div>
+          <div id='personalTrainer' className='btn' onClick={jobHandler}>Personal Trainer</div>
+          <div id='fitnessInstructor' className='btn' onClick={jobHandler}>Fitness Instructor</div>
+          <div id='yogaInstructor' className='btn' onClick={jobHandler}>Yoga Instructor</div>
           
         </div>
         <CareersCard image={job.image} title={job.title} text={job.text}responsibilities={job.responsibilities}/>
