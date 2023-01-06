@@ -1,5 +1,15 @@
 import { Link } from 'react-router-dom'
+import { Navigation, Pagination, Scrollbar, A11y,EffectFade } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css/navigation'
+import 'swiper/css/effect-fade'
+import ImageSlider from '../components/ImageSlider'
 import teamMember from '../img/careers-team-member.jpg'
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const Home = () => {
   return (
@@ -17,18 +27,49 @@ const Home = () => {
         </div>
       </div>
       <section className="bg-amber-800 text-white ">
-        <div className='container mx-auto flex flex-col items-center justify-center text-xl text-center space-x-6 md:text-3xl lg:text-5xl md:flex-row'>
-
-        <h2>Industry's Best Equipment</h2>
-        <h2>Training</h2>
-        <h2>Great Community</h2>
+        <div className="container mx-auto flex flex-col items-center justify-center text-xl text-center space-x-6 md:text-3xl lg:text-5xl md:flex-row">
+          <h2>Industry's Best Equipment</h2>
+          <h2>Training</h2>
+          <h2>Great Community</h2>
         </div>
       </section>
       <section className="bg-black text-white">
-        <div className="container mx-auto">
-          <h3>Testimonials</h3>
-        </div>
+        {/* <div className="carousel w-screen h-screen relative">
+          <button className="carousel-button prev">&#8656;</button>
+          <button className="carousel-button next">&#8658;</button>
+          <ul>
+            <li className="slide" data-active>
+              <img src={teamMember} alt="" />
+            </li>
+            <li className="slide">
+              <img className="opacity-60" src={teamMember} alt="" />
+            </li>
+            <li className="slide">
+              <img className="opacity-30" src={teamMember} alt="" />
+            </li>
+          </ul>
+        </div> */}
+        <Swiper
+        modules={[Navigation, EffectFade]}
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      effect
+      speed={800}
+      loop
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+      className='w-full h-screen'
+    >
+      <SwiperSlide className='w-full h-full flex justify-center items-center'>Slide 1</SwiperSlide>
+      <SwiperSlide className='w-full h-full flex justify-center items-center'>Slide 2</SwiperSlide>
+      <SwiperSlide className='w-full h-full flex justify-center items-center'>Slide 3</SwiperSlide>
+      <SwiperSlide className='w-full h-full flex justify-center items-center'>Slide 4</SwiperSlide>
+      ...
+    </Swiper>
+        
       </section>
+      
       <section className="bg-amber-800 text-white">
         <div className="flex flex-col justify-center items-center container mx-auto text-center md:flex-row">
           <div>
