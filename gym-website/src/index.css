@@ -33,13 +33,9 @@
   height: 50vh;
 }
 /* Home */
-.carousel {
-
-}
-.carousel > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
 }
 
 .slide {

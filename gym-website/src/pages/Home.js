@@ -1,15 +1,19 @@
 import { Link } from 'react-router-dom'
-import { Navigation, Pagination, Scrollbar, A11y,EffectFade } from 'swiper'
+import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-fade'
 import ImageSlider from '../components/ImageSlider'
 import teamMember from '../img/careers-team-member.jpg'
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import testimonial1 from '../img/home-testimonial1.jpg'
+import testimonial2 from '../img/home-testimonial2.jpg'
+import testimonial3 from '../img/home-testimonial3.jpg'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 
 const Home = () => {
   return (
@@ -34,42 +38,66 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-black text-white">
-        {/* <div className="carousel w-screen h-screen relative">
-          <button className="carousel-button prev">&#8656;</button>
-          <button className="carousel-button next">&#8658;</button>
-          <ul>
-            <li className="slide" data-active>
-              <img src={teamMember} alt="" />
-            </li>
-            <li className="slide">
-              <img className="opacity-60" src={teamMember} alt="" />
-            </li>
-            <li className="slide">
-              <img className="opacity-30" src={teamMember} alt="" />
-            </li>
-          </ul>
-        </div> */}
-        <Swiper
-        modules={[Navigation, EffectFade]}
-      spaceBetween={50}
-      slidesPerView={1}
-      navigation
-      effect
-      speed={800}
-      loop
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-      className='w-full h-screen'
-    >
-      <SwiperSlide className='w-full h-full flex justify-center items-center'>Slide 1</SwiperSlide>
-      <SwiperSlide className='w-full h-full flex justify-center items-center'>Slide 2</SwiperSlide>
-      <SwiperSlide className='w-full h-full flex justify-center items-center'>Slide 3</SwiperSlide>
-      <SwiperSlide className='w-full h-full flex justify-center items-center'>Slide 4</SwiperSlide>
-      ...
-    </Swiper>
-        
+        <div className='container mx-auto'>
+          <Swiper
+            modules={[Navigation, EffectFade]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation
+            effect
+            speed={800}
+            loop
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+            className="w-full h-screen md:h-[35rem]"
+          >
+            <SwiperSlide className="w-full h-full flex flex-col justify-center items-center md:flex-row">
+              <img
+                className="rounded-full object-cover h-[18rem] w-[18rem] md:h-[20rem] md:w-[20rem]"
+                src={testimonial1}
+                alt=""
+              />
+              <div className="text-center m-3">
+                <p className="text-2xl font-bold md:text-6xl">Mitchell</p>
+                <p className='text-xl md:text-xl'>
+                  "My life has totally changed since becoming a part of this gym."
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="w-full h-full flex flex-col justify-center items-center md:flex-row">
+              <img
+                className="rounded-full object-cover h-[18rem] w-[18rem] md:h-[20rem] md:w-[20rem]"
+                src={testimonial2}
+                alt=""
+              />
+              <div className="text-center m-3">
+                <p className="text-2xl font-bold md:text-6xl">Jessica</p>
+                <p className='text-xl md:text-xl'>
+                  I just feel so much better about myself ever since becoming a
+                  part of the Local Gym.
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="w-full h-full flex flex-col justify-center items-center md:flex-row">
+              <img
+                className="rounded-full object-cover h-[18rem] w-[18rem] md:h-[20rem] md:w-[20rem]"
+                src={testimonial3}
+                alt=""
+              />
+              <div className="text-center m-3">
+                <p className="text-2xl font-bold md:text-6xl">Paul</p>
+                <p className='text-xl md:text-xl'>
+                  I can finally keep up with my kids. Prioritizing my health was
+                  one of the best decisions I've made. No better place to do it
+                  than the Local Gym.
+                </p>
+              </div>
+            </SwiperSlide>
+            ...
+          </Swiper>
+        </div>
       </section>
-      
+
       <section className="bg-amber-800 text-white">
         <div className="flex flex-col justify-center items-center container mx-auto text-center md:flex-row">
           <div>
