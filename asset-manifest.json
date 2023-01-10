@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Gym/static/css/main.9f5c0265.css",
-    "main.js": "/Gym/static/js/main.7290d40a.js",
+    "main.css": "/Gym/static/css/main.c3cb2ee9.css",
+    "main.js": "/Gym/static/js/main.a6e36810.js",
     "static/media/about-trx.jpg": "/Gym/static/media/about-trx.fd7f8c70a9d8f96ba433.jpg",
     "static/media/careers-kettlebells.jpg": "/Gym/static/media/careers-kettlebells.6508a069e4931f0e4ede.jpg",
     "static/media/home-testimonial2.jpg": "/Gym/static/media/home-testimonial2.1a234b43396c9df290d8.jpg",
@@ -26,11 +26,11 @@
     "static/media/personal-training-treadmill.jpg": "/Gym/static/media/personal-training-treadmill.b1404f0bb8911e2b2d63.jpg",
     "static/media/empty-gym.jpg": "/Gym/static/media/empty-gym.e80d726ca43d6bbb156b.jpg",
     "index.html": "/Gym/index.html",
-    "main.9f5c0265.css.map": "/Gym/static/css/main.9f5c0265.css.map",
-    "main.7290d40a.js.map": "/Gym/static/js/main.7290d40a.js.map"
+    "main.c3cb2ee9.css.map": "/Gym/static/css/main.c3cb2ee9.css.map",
+    "main.a6e36810.js.map": "/Gym/static/js/main.a6e36810.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f5c0265.css",
-    "static/js/main.7290d40a.js"
+    "static/css/main.c3cb2ee9.css",
+    "static/js/main.a6e36810.js"
   ]
 }
