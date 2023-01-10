@@ -7,8 +7,8 @@ const AboutCard = ({imageClass, title, text}) => {
               {/* <img className='w-full ' src={aboutPool} alt="" /> */}
             </div>
             <div className="flex flex-col bg-black test h-2/5 p-4 space-y-3 overflow-auto md:h-full md:w-1/3 md:justify-center">
-              <h3 className=" text-2xl py-2 border-white border-b border-t md:text-xl">{title}</h3>
-              <p className="text-lg md:text-[1rem]">{text}</p>
+              <h3 className=" text-2xl py-2 text-white border-white border-b border-t md:text-xl">{title}</h3>
+              <p className="text-lg text-white md:text-[1rem]">{text}</p>
             </div>
           </div>
     )

@@ -32,14 +32,15 @@ const PersonalTraining = (props) => {
     },
   }
   return (
-    // <section className="bg-lightGrey">
-    <>
+    
+    <section className="bg-gray-300">
+    
       <div className="banner-pt banner-h-sm bg-cover bg-bottom bg-no-repeat h-1/2 flex justify-center items-center">
         <BannerText title="Personal Training" />
       </div>
 
       <section className=" bg-amber-800 text-white w-full">
-        <div className='container mx-auto'>
+        <div className="container mx-auto flex flex-col items-center py-3">
           <p className="text-xl p-4">
             Your fitness journey doesn't have to be something that do alone. Our
             team of personal trainers is ready to do everything to help you
@@ -49,11 +50,13 @@ const PersonalTraining = (props) => {
             trainers can help you no matter what your skill level is, and for a
             reasonable affordable price.
           </p>
+          
+          <a href="#personal-training" className='btn md:w-1/2 lg:w-1/3'>Sign-Up Today</a>
         </div>
       </section>
       {/* Types of training */}
-      <div className="container mx-auto flex flex-wrap">
-        <div className="space-y-3 md:grid md:grid-cols-2 md:gap-1 md:space-y-0">
+      <div className="container mx-auto flex flex-wrap md:my-2">
+        <div className="space-y-3 md:grid md:grid-cols-2 md:gap-2 md:space-y-0">
           {/* https://unsplash.com/photos/8uzJGgJ1_3w */}
           <PtCard
             image={ptCardio}
@@ -81,12 +84,12 @@ const PersonalTraining = (props) => {
         </div>
       </div>
       {/* Sign up form */}
-      <div className="h-screen w-20">
-        <h1>Hello</h1>
+      
+      <div id='personal-training' className='container mx-auto m-2'>
+        <PtForm />
       </div>
-      <PtForm />
-      <PtModal />
-    </>
+      {/* <PtModal /> */}
+      </section>
   )
 }
 

@@ -26,7 +26,7 @@ export default function Header() {
       <Logo />
       {/* Desktop Menu */}
       {isComputer && (
-        <nav className="hidden space-x-4 text-3xl md:flex">
+        <nav className="hidden space-x-4 text-3xl md:flex md:justify-center md:items-center">
           <CustomLink to="/Gym">Home</CustomLink>
           <CustomLink to="/Gym/about">About</CustomLink>
           <CustomLink to="/Gym/personal-training">Personal Training</CustomLink>

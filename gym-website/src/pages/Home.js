@@ -30,15 +30,17 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <section className="bg-amber-800 text-white ">
-        <div className="container mx-auto flex flex-col items-center justify-center text-xl text-center space-x-6 md:text-3xl lg:text-5xl md:flex-row">
-          <h2>Industry's Best Equipment</h2>
-          <h2>Training</h2>
-          <h2>Great Community</h2>
+      <section className=" text-white ">
+        <div className="container mx-auto  md:bg-amber-800">
+          <div className='flex flex-col items-center justify-center font-bold text-xl text-center space-y-3 p-2  md:space-x-6 md:space-y-0 md:text-3xl lg:text-5xl md:flex-row md:h-[10rem]'>
+            <h2>Industry's Best Equipment,</h2>
+            <h2>Training,</h2>
+            <h2>Great Community</h2>
+          </div>
         </div>
       </section>
-      <section className="bg-black text-white">
-        <div className='container mx-auto'>
+      <section className=" text-white">
+        <div className="bg-black container mx-auto">
           <Swiper
             modules={[Navigation, EffectFade]}
             spaceBetween={50}
@@ -59,8 +61,9 @@ const Home = () => {
               />
               <div className="text-center m-3">
                 <p className="text-2xl font-bold md:text-6xl">Mitchell</p>
-                <p className='text-xl md:text-xl'>
-                  "My life has totally changed since becoming a part of this gym."
+                <p className="text-xl md:text-xl">
+                  "My life has totally changed since becoming a part of this
+                  gym."
                 </p>
               </div>
             </SwiperSlide>
@@ -72,9 +75,9 @@ const Home = () => {
               />
               <div className="text-center m-3">
                 <p className="text-2xl font-bold md:text-6xl">Jessica</p>
-                <p className='text-xl md:text-xl'>
-                  I just feel so much better about myself ever since becoming a
-                  part of the Local Gym.
+                <p className="text-xl md:text-xl">
+                  "I just feel so much better about myself ever since becoming a
+                  part of the Local Gym."
                 </p>
               </div>
             </SwiperSlide>
@@ -86,10 +89,10 @@ const Home = () => {
               />
               <div className="text-center m-3">
                 <p className="text-2xl font-bold md:text-6xl">Paul</p>
-                <p className='text-xl md:text-xl'>
-                  I can finally keep up with my kids. Prioritizing my health was
-                  one of the best decisions I've made. No better place to do it
-                  than the Local Gym.
+                <p className="text-xl md:text-xl">
+                  "I can finally keep up with my kids. Prioritizing my health
+                  was one of the best decisions I've made. No better place to do
+                  it than the Local Gym."
                 </p>
               </div>
             </SwiperSlide>
@@ -98,8 +101,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-amber-800 text-white">
-        <div className="flex flex-col justify-center items-center container mx-auto text-center md:flex-row">
+      <section className=" text-white">
+        <div className="flex flex-col justify-center items-center container mx-auto text-center md:flex-row md:bg-amber-800">
           <div>
             <h4 className="text-3xl font-bold">Looking for a job?</h4>
             <p className="text-xl">We'd love to have you on our team</p>

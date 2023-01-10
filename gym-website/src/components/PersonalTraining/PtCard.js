@@ -1,6 +1,6 @@
 const PtCard = (props) => {
   return (
-    <div className="flex flex-col justify-between bg-black">
+    <div className="flex flex-col justify-between bg-black md:rounded-lg">
       <div className="text-white">
         <h2 className="text-5xl text-center">{props.title}</h2>
 

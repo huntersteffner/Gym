@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        lightGrey: '#efefef',
+        lightGrey: '#8e918f',
       },
       fontFamily: {
         sans: ['Rubik', 'sans-serif'],

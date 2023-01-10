@@ -1,6 +1,6 @@
 const BannerText = ({title}) => {
   return (
-    <div className="flex justify-center items-center text-5xl py-5 px-10 bg-red-500 opacity-80 rounded-full">
+    <div className="flex justify-center items-center text-xl py-5 px-10 bg-amber-800 text-white opacity-90 rounded-full md:text-5xl">
       <h2>{title}</h2>
     </div>
   )

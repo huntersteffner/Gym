@@ -17,7 +17,7 @@ export default function App() {
 
   
   return (
-    <>
+    <div className='bg-gray-300'>
       <Header />
       <Routes >
         <Route path='/Gym' element={<Home/>} />
@@ -29,6 +29,6 @@ export default function App() {
       </Routes>
       <Footer/>
       
-    </>
+    </div>
   )
 }

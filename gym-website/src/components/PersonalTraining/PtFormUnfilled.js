@@ -2,7 +2,7 @@ import Button from '../Button'
 
 const PtFormUnfilled = () => {
   return (
-    <div className="bg-amber-800 text-white">
+    <div className="bg-amber-800 text-white md:rounded-lg">
       <form className="flex flex-col justify-center items-center p-2">
         <h3 className="text-3xl text-center md:text-5xl">
           Sign Up Today for a Free Personal Training Session

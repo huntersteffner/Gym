@@ -58,18 +58,20 @@ const About = () => {
         <BannerText title="About our Gym" />
       </div>
       <main>
-        <section className="flex flex-col justify-center items-center px-8">
-          <h1>About our Gym</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur rem, placeat voluptatibus amet id nihil iure
-            reprehenderit accusantium eaque, sequi animi. Nesciunt excepturi
-            laudantium consequatur, corporis similique tenetur quidem quae.
-          </p>
-        </section>
+        {/* <section className="">
+          <div className="container mx-auto flex flex-col justify-center items-center px-8">
+            <h1>About our Gym</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur rem, placeat voluptatibus amet id nihil iure
+              reprehenderit accusantium eaque, sequi animi. Nesciunt excepturi
+              laudantium consequatur, corporis similique tenetur quidem quae.
+            </p>
+          </div>
+        </section> */}
         <section className="container flex flex-col mx-auto">
-          <h2>We have everything you could ever need</h2>
-          <div className="grid grid-cols-1 space-y-4 gap-0 lg:grid-cols-2 lg:space-y-0 lg:gap-4">
+          <h2 className='text-center text-3xl font-bold'>We have everything you could ever need</h2>
+          <div className="grid grid-cols-1 text-white space-y-4 gap-0 lg:grid-cols-2 lg:space-y-0 lg:gap-4">
             {aboutCards.map((item) => (
               <AboutCard
                 key={item.key}
@@ -82,30 +84,30 @@ const About = () => {
         </section>
         <section className="container mx-auto">
           <h2>Training</h2>
-          
+
           <div className="flex flex-col md:flex-row">
             <AboutTrainingCard
               image={ptImage}
               alt="Personal Training"
               reverse={false}
-              link='personal-training'
+              link="personal-training"
             />
             <AboutTrainingCard
               image={classesImage}
               alt="Group Classes"
               reverse={true}
-              link='group-classes'
+              link="group-classes"
             />
           </div>
         </section>
-        <section className="container mx-auto flex flex-col mt-3 md:flex-row">
+        <section className="container mx-auto flex flex-col mt-3 bg-amber-800 text-white md:flex-row md:rounded-lg md:my-2">
           {/* Manager */}
           <div>
             {/* https://unsplash.com/photos/eaUUbS-42YQ */}
             <img
               className="rounded-full overflow-hidden"
               src={aboutManager}
-              alt=""
+              alt="Manager"
             />
           </div>
           <div className="flex flex-col justify-center items-center">

@@ -37,7 +37,9 @@
 .swiper-button-prev {
   color: #fff !important;
 }
-
+.test {
+  color: #9c9aa6;
+}
 .slide {
   inset: 0;
   @apply absolute opacity-0;
@@ -248,4 +250,9 @@ input[type=file] {
 
 .form-checkbox-div {
   @apply flex justify-between;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bold;
 }
