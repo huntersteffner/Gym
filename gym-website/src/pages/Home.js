@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom'
-import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper'
+import { Navigation, EffectFade } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-fade'
-import ImageSlider from '../components/ImageSlider'
 import teamMember from '../img/careers-team-member.jpg'
 
 import testimonial1 from '../img/home-testimonial1.jpg'
